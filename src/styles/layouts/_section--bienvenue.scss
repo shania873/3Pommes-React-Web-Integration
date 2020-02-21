@@ -22,17 +22,18 @@
             width: 100%;
             position: relative;
             display: flex;
+            justify-content: space-between;
             align-items: center;
            
             li{
                 display: inline-block;
 
             }
-            li:last-child {
+            // li:last-child {
              
-                position: absolute;
-                right: 0;
-              }
+            //     position: absolute;
+            //     right: 0;
+            //   }
         }
     }
         .bienvenue--left{
@@ -42,16 +43,24 @@
             h1{
                 margin-top: 30px;
                 display: block;
-                font-size: 0.8em;
+                font-size: 0.8em;             
+                color: #35495e;
                 span{
                     font-size: 1em;
+                    color: #35495e;
                 }
             }
             h4{
-                font-family: FontNotoBoldItalic, Arial, Helvetica, sans-serif;
+                color: #35495e;
+                font-family: 'Noto Sans',Arial, Helvetica, sans-serif;
+                // font-family: FontNotoBoldItalic, Arial, Helvetica, sans-serif;
+                font-style: italic;
+                font-weight: 400;
             }
-            .bienvenue--picWelcome{
+            .bienvenue--picWelcome{           
                 background-color: white;
+                display: flex;
+                align-items: center;
                 .bienvenue--iconCrayon{
                     position: absolute;
                     top: 8px;
@@ -69,6 +78,19 @@
             .bienvenue--BadgeKarma{
                 background-color: #70d84e;
                 // padding-bottom: 15px;
+              
+                .col-sm-6{
+                    // height: 28vh;
+                    padding-top: 10px;
+                    padding-bottom: 37px;
+                    box-sizing: border-box;
+                }
+                .plugin-jauge{
+                    width: 216px;
+                    margin: auto;
+                    max-width: 180px;
+                    display: inline-block;
+                }
                 .badges-img{
                     .badge-item{
                         width: 49px;
@@ -81,6 +103,10 @@
                 }
                 h4{
                     margin-bottom: 14px;
+                    font-size: 1.1em;
+                    color: #35495e;
+                    font-style: normal;
+                    font-weight: bold;
                 }
                 
                 // .jauge--karma{
@@ -88,8 +114,12 @@
                 // }
                 .bienvenue--iconOeil{
                     margin-top: 5px;
-                   display: flex;
-                   margin-bottom: 10px;
+                    display: flex;
+                    margin-bottom: 10px;
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    margin-right: 13px;
                     img{
                         margin-left: auto;
                         width: auto;
@@ -104,18 +134,25 @@
             overflow: hidden;
             .row--rappels{
               border-bottom:4px white dotted; 
+              display: flex;
+              align-items: center;
+              padding-top: 10px;
+              padding-bottom: 10px;
+            }
+            .row--messages{
+                padding-top: 10px;
+                padding-bottom: 10px;
+                border-bottom: 4px white dotted;
             }
             p{
                 
                 span{
                     display:block;
                 }
-                font-family: FontNotoRegular, Arial, Helvetica, sans-serif;
-                font-size: 0.81em;
-                /* text-overflow: ellipsis; */
-                // max-height: 32px;
-                // height: 36px;
+               
+                font-size: 0.9em;              
                 overflow: hidden;
+                margin-top: 0;                
             }
             p::after{
                 content: '...';
