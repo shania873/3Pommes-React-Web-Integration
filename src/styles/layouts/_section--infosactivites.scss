@@ -1,0 +1,19 @@
+.section--infosactivites{
+    ul{
+        max-width: 48px;
+        display: flex;
+        align-content: flex-end;
+        align-items: flex-end;
+        margin-left: auto;
+        justify-content: space-between;
+        padding: 0;
+        li{
+            font-family: 'Noto Sans',Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 1.8em;
+            cursor:pointer;
+
+         
+        }
+    }
+}

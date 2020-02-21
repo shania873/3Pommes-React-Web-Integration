@@ -42,9 +42,14 @@ function btnRappelsMessages(){
     
 }
 function diaporama(){
+    // var prev  = $('.prev').hide();
+
+    // console.log(prev);
     $('.card-slider').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
+        prevArrow: $('.prev'),
+        nextArrow: $('.next'),
         // autoplay: true,
         // autoplaySpeed: 1500,
         arrow: true,
