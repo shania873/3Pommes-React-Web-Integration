@@ -9,47 +9,48 @@ var arrow = document.querySelectorAll("slick-arrow");
 
 arrow.innerHTML = "";
 
-function btnRappelsMessages(){
+function btnRappelsMessages() {
     var btnRappels = document.getElementById("btn--rappels");
-    var btnMessages = document.getElementById("btn--messages");   
-    
+    var btnMessages = document.getElementById("btn--messages");
+
     var containerRappels = document.getElementById("rappels--partBienvenue");
     var containerMessages = document.getElementById("messages--partBienvenue");
-    
+
     var titreRappels = document.getElementById("titre--Rappels");
     var titreMessages = document.getElementById("titre--Messages");
-    
+
     containerRappels.style.display = "none";
     titreRappels.style.display = "none";
     // titre.innerHTML = "Rappels";
-    
+
     btnRappels.addEventListener("click", function () {
         containerMessages.style.display = "block";
-        containerRappels.style.display = "none";      
-        
+        containerRappels.style.display = "none";
+
         titreMessages.style.display = "block";
-        titreRappels.style.display = "none";    
-      
-        
+        titreRappels.style.display = "none";
+
+
     });
     btnMessages.addEventListener("click", function () {
-    
-      
 
 
-        
+
+
+
         containerMessages.style.display = "none";
-        containerRappels.style.display = "block";   
-        
+        containerRappels.style.display = "block";
+
         titreMessages.style.display = "none";
-        titreRappels.style.display = "block";   
-        
-       
-        
+        titreRappels.style.display = "block";
+
+
+
     });
-    
+
 }
-function diaporama(){
+
+function diaporama() {
     // var prev  = $('.prev').hide();
 
     // console.log(prev);
@@ -64,21 +65,36 @@ function diaporama(){
         dots: false,
         pauseOnHover: false,
         responsive: [{
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 2
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+
+            {
+                breakpoint: 520,
+                settings: {
+                    slidesToShow: 1
+                }
+            },          
+            {
+                breakpoint: 315,
+                settings: {
+                    slidesToShow: 1
+                }
             }
-        }, {
-            breakpoint: 520,
-            settings: {
-                slidesToShow: 1
-            }
-        }]
+        ]
     });
-  
+
 }
 
-function init(){
+function init() {
     btnRappelsMessages();
     diaporama();
 }
