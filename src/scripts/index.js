@@ -16,16 +16,20 @@ function btnRappelsMessages(){
     var containerRappels = document.getElementById("rappels--partBienvenue");
     var containerMessages = document.getElementById("messages--partBienvenue");
     
-    var titre = document.getElementById("titre");
+    var titreRappels = document.getElementById("titre--Rappels");
+    var titreMessages = document.getElementById("titre--Messages");
     
     containerRappels.style.display = "none";
+    titreRappels.style.display = "none";
     // titre.innerHTML = "Rappels";
     
     btnRappels.addEventListener("click", function () {
         containerMessages.style.display = "block";
-        containerRappels.style.display = "none";       
-        titre.innerHTML = "Messages";
-    
+        containerRappels.style.display = "none";      
+        
+        titreMessages.style.display = "block";
+        titreRappels.style.display = "none";    
+      
         
     });
     btnMessages.addEventListener("click", function () {
@@ -35,8 +39,12 @@ function btnRappelsMessages(){
 
         
         containerMessages.style.display = "none";
-        containerRappels.style.display = "block";      
-        titre.innerHTML = "Rappels";
+        containerRappels.style.display = "block";   
+        
+        titreMessages.style.display = "none";
+        titreRappels.style.display = "block";   
+        
+       
         
     });
     
