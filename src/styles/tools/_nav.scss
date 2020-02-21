@@ -1,67 +1,45 @@
   
   
+
+.section--mainmenu{
   .container--menu{  
-    background-color: #ffff;
-   
-    
-    .navbar{
-      margin-bottom: 0px;
-      .navbar-header{     
-        margin-bottom: 12px;
-        .navbar-toggle .icon-bar {
-   
-          color: white;
-          background-color: white;
+    background-color: #ffff;  
+    nav{
+      margin: 0;
+      .navbar-brand.navbar-image {
+        // padding: 0 20px 0 0;
+        // display: flex;
+        height: 100%;
+
       }
-      .navbar-toggle {      
-        background-color: #00000085;       
-        border: 1px solid #5d4848e3;      
+      .navbar-brand.navbar-image>img {
+        margin: auto 0;
+        z-index: 1;
+        height: auto;
+        width: 100%;
       }
-        .navbar-brand{
-          float: left;
-          padding: 15px 15px;
-          font-size: 18px;
-          line-height: 20px;
-          height: 10vh;
-          display: flex;
-          
-          img{
-         
-            width: 50%;
-            max-width: 50%;
-          }
-      }
-      }
-      #navbar2{     
-        .nav{
+
+      .collapse{
+        ul{
           li{
-            padding-left: 5px;
-            padding-right: 5px;
-              a{
-                display: inline-block;
-                text-align: center;
-                font-size: 0.9em;
-                color: #35495e;
-                padding-bottom: 7px;
-                font-family: 'Noto Sans', sans-serif;
-                margin-bottom: 10px;
-                /* font-family: 'FontNotoBold'; */
-                font-weight: bold;
-              }
-              a:hover{
-                border-bottom: 3px #50af31 solid;
-                background-color: transparent;
-                transition: all 0.5s;
-                -webkit-transition: all 0.5s;
-                -moz-transition: all 0.5s;
-                -ms-transition: all 0.5s;
-                -o-transition: all 0.5s;
-}
+           a{
+            font-family: 'Noto Sans',Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 1em;
+            // text-align: center;
+            // max-width: 174px;
+           }
           }
         }
       }
     }
     
-     
-  }
 
+      @media (min-width: 768px) {
+        // .navbar.taller .navbar-nav>li>a {
+        //     padding-top: 25px;
+        //     padding-bottom: 25px;
+        // }
+      }
+  }
+}

@@ -1,4 +1,14 @@
 @media (min-width: 365px) {
+    .collapse{
+        ul{
+          li{
+           a{            
+            max-width: 100%;
+            text-align: left;
+           }
+          }
+        }
+      }
     .section--bienvenue .container--bienvenue .bienvenue--left .bienvenue--BadgeKarma {
         background-color: #70d84e;
         margin-bottom: 51px;
@@ -42,6 +52,23 @@
 }
 
 @media (min-width: 725px) {
+    .navbar.taller .navbar-nav>li>a {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        // text-align: center;
+        
+    }
+    .collapse{
+        ul{
+          li{
+           a{
+            
+            max-width: 174px;
+            text-align: center;
+           }
+          }
+        }
+      }
     .content--infosrandonne{
         background-color: white;
         display: flex;
