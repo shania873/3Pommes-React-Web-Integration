@@ -1,0 +1,89 @@
+body{
+    font-family: 'Noto Sans',Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+*{
+    box-sizing: border-box;
+}
+.p-0{
+    padding: 0!important;
+}
+#btn--rappels{
+    display: inline-block;
+    padding: 16px;
+}
+.answer--button{
+    color: white;
+  
+    display: inline-block;
+    padding: 1px;
+    border-bottom: solid 1px white;
+}
+.vert--clair{
+    background-color:#8deb6e!important;
+}
+// .slick-arrow{
+//     display: inline-block;
+//     position: absolute;
+//     top: 0;
+// }
+a{
+    text-decoration: none;
+}
+img{
+    // width: 100%;
+    // height: auto;
+}
+.padding--0{
+    padding: 0;
+}
+.collapsing {   
+    height: 100%;
+    overflow: hidden;
+    transition: all 2s;
+  }
+.overflow--hidden{
+    overflow: hidden;
+}
+
+.shadow--menu{   
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    
+}
+.d-flex{
+    display: flex;
+}
+ul{
+    display: inline;
+        list-style: none;
+ 
+}
+
+
+.setButtons--rappels{
+    display: inline-block;
+    padding-top: 14px;
+    padding-bottom: 14px;
+
+    .go--button{
+        color: #50ae31;
+        padding-left: 26px;
+        padding-right: 26px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        border-radius: 5px;
+        background-color: white;
+    
+    
+    }
+    
+    .cancel--button{
+        display: block;
+        text-align: center;
+        font-size: 14px;
+        color: white;
+        margin: auto;
+        /* width: 4vw; */
+        margin-top: 8px;
+    }
+}

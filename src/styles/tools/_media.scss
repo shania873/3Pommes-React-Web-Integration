@@ -1,0 +1,82 @@
+@media (min-width: 365px) {
+    .section--bienvenue .container--bienvenue .bienvenue--left .bienvenue--BadgeKarma {
+        background-color: #70d84e;
+        margin-bottom: 51px;
+    }
+    .content--infosrandonne{
+        background-color: white;
+        display: block;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        margin-left: 30px;
+    }
+    .section--bienvenue .container--bienvenue .bienvenue--left .bienvenue--BadgeKarma h4 {
+        margin-bottom: 14px;
+        margin: 0;
+        padding-top: 22px;
+        padding-bottom: 22px;
+    }
+    .section--bienvenue .container--bienvenue .bienvenue--left .bienvenue--BadgeKarma h4 {
+        margin-top: 0px;
+    }
+    .section--bienvenue .container--bienvenue .bienvenue--left .bienvenue--BadgeKarma .jauge--karma {
+        width: 24%;
+    }
+    .bienvenue--left{
+        margin-bottom: 50px;
+    }
+    .container--menu {
+        #navbar2 {
+            .nav {
+                li {
+                    a {
+                        display: inline-block;
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+
+    }
+
+}
+
+@media (min-width: 725px) {
+    .content--infosrandonne{
+        background-color: white;
+        display: flex;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        margin-left: 30px;
+    }
+    .section--bienvenue .container--bienvenue .bienvenue--left .bienvenue--BadgeKarma h4 {
+        margin-bottom: 14px;
+        margin: 0;
+        padding-top: 0px;
+        padding-bottom:0px;
+        margin-top: 15px;
+    }
+    .section--bienvenue .container--bienvenue .bienvenue--left .bienvenue--BadgeKarma {
+        background-color: #70d84e;
+        margin-bottom: 0px;
+    }
+    .section--bienvenue .container--bienvenue .bienvenue--left .bienvenue--BadgeKarma .jauge--karma {
+        width: 69%;
+    }
+    .bienvenue--left{
+        margin-bottom: 0px;
+    }
+    .container--menu {
+        #navbar2 {
+            .nav {
+                li {
+                    a {
+                        max-width: 125px;
+                    }
+                }
+            }
+        }
+
+    }
+
+}

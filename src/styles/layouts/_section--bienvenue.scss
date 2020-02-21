@@ -1,0 +1,126 @@
+
+
+
+
+.section--bienvenue{
+    background-color: #50ae31;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    .container--bienvenue{    
+    .mainMenu--bienvenue{
+        #titre{
+            color: white;
+            font-family: FontNotoRegular, Arial, Helvetica, sans-serif;
+            margin: 0;
+            font-size: 1.5em;
+        }
+        ul{           
+            display: inline-block;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            position: relative;
+            display: flex;
+            align-items: center;
+           
+            li{
+                display: inline-block;
+
+            }
+            li:last-child {
+             
+                position: absolute;
+                right: 0;
+              }
+        }
+    }
+        .bienvenue--left{
+            background-color: white;
+          
+            
+            h1{
+                margin-top: 30px;
+                display: block;
+                font-size: 0.8em;
+                span{
+                    font-size: 1em;
+                }
+            }
+            h4{
+                font-family: FontNotoBoldItalic, Arial, Helvetica, sans-serif;
+            }
+            .bienvenue--picWelcome{
+                background-color: white;
+                .bienvenue--iconCrayon{
+                    position: absolute;
+                    top: 8px;
+                    right: 12px;
+
+                }
+                h1{
+                    span{
+                        display: block;
+                        font-size: 29px;
+                      
+                    }
+                }
+            }
+            .bienvenue--BadgeKarma{
+                background-color: #70d84e;
+                // padding-bottom: 15px;
+                .badges-img{
+                    .badge-item{
+                        width: 49px;
+                        max-width: 50px;
+                        display: inline-block;
+                    }
+                    img{
+                        width: 100%;
+                    }
+                }
+                h4{
+                    margin-bottom: 14px;
+                }
+                
+                // .jauge--karma{
+                //     width: 69%;
+                // }
+                .bienvenue--iconOeil{
+                    margin-top: 5px;
+                   display: flex;
+                   margin-bottom: 10px;
+                    img{
+                        margin-left: auto;
+                        width: auto;
+                        align-content: flex-end;
+                        align-items: flex-end;
+                    }
+                }
+            }
+        }
+        .bienvenue--right{
+            color: white;
+            overflow: hidden;
+            .row--rappels{
+              border-bottom:4px white dotted; 
+            }
+            p{
+                
+                span{
+                    display:block;
+                }
+                font-family: FontNotoRegular, Arial, Helvetica, sans-serif;
+                font-size: 0.81em;
+                /* text-overflow: ellipsis; */
+                // max-height: 32px;
+                // height: 36px;
+                overflow: hidden;
+            }
+            p::after{
+                content: '...';
+            }
+        }
+    }
+    
+}

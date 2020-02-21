@@ -1,0 +1,42 @@
+
+
+
+@import "bootstrap/normalize";
+
+
+
+//tools
+@import "tools/global";
+@import "tools/nav";
+@import "tools/fonts";
+@import "tools/media";
+@import "tools/variables";
+@import "tools/card";
+
+@import "tools/slick";
+
+
+//bootstrap
+// @import "bootstrap-compass";
+// @import "bootstrap-variables";
+
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+@import "bootstrap/navs";
+@import "bootstrap/grid";
+@import "bootstrap/forms";
+@import "bootstrap/navbar";
+@import "bootstrap/dropdowns";
+@import "bootstrap/carousel";
+@import "bootstrap/thumbnails";
+
+
+//animate 
+// @import "../node_modules/animate.sass/scss/animate.scss";
+
+
+
+//layouts
+
+@import "../styles/layouts/section--bienvenue";
+@import "../styles/layouts/section--infosrandonne";
