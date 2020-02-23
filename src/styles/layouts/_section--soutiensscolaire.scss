@@ -1,4 +1,31 @@
 .section--soutiensscolaire{
     padding-top: 100px;
     padding-bottom: 100px;
+.content--soutiensscolaire{
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    justify-content: space-between;
+    padding-top: 38px;
+    padding-bottom: 20px;
+    .set-CallToAction--soutiensscolaire{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        text-align: center;
+        margin: auto;
+        align-items: center;
+        margin: 0;
+      
+    }
+    p{
+        z-index: 1;
+        text-align: center;
+        span{
+            display: block;
+            font-weight: bold;
+        }
+    }
+}
+ 
 }

@@ -12,14 +12,11 @@
 @import "tools/media";
 @import "tools/variables";
 @import "tools/card";
-
 @import "tools/slick";
+@import "tools/footer";
 
 
 //bootstrap
-// @import "bootstrap-compass";
-// @import "bootstrap-variables";
-
 @import "bootstrap/variables";
 @import "bootstrap/mixins";
 @import "bootstrap/navs";
@@ -32,14 +29,11 @@
 @import "bootstrap/responsive-utilities";
 @import "bootstrap/responsive-embed";
 
-
-//animate 
-// @import "../node_modules/animate.sass/scss/animate.scss";
-
-
-
 //layouts
 
 @import "../styles/layouts/section--bienvenue";
 @import "../styles/layouts/section--infosrandonne";
 @import "../styles/layouts/section--infosactivites";
+@import "../styles/layouts/section--soutiensscolaire";
+@import "../styles/layouts/section--demandestechniques";
+@import "../styles/layouts/section--citation";

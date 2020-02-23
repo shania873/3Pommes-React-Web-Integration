@@ -9,21 +9,7 @@
         text-align: center;
         margin: auto;
         align-items: center;
-        a{
-            /* text-decoration: underline; */
-            color: #3d3d3d;
-            padding-bottom: 5px;
-            border-bottom: solid 1px;
-            padding: 0;
-        }
-        button{
-            background-color: #50ae31;
-            padding: 12px;
-            box-shadow: none;
-            border: none;
-            color: white;
-            margin-bottom: 15px;
-        }
+      
     }
 
 
@@ -32,7 +18,10 @@
         display: flex;
          align-items: center;
          h2{
-            color: rgb(61, 61, 61);
+            // color: rgb(61, 61, 61);
+            color: #3d3d3d;
+            font-weight: 400;
+            font-size: 1.7em;
          }
     ul{
         max-width: 48px;
@@ -46,7 +35,15 @@
             font-family: 'Noto Sans',Arial, Helvetica, sans-serif;
             font-weight: bold;
             font-size: 1.8em;
-            cursor:pointer;         
+            margin-right: 5px;
+            
+            svg{
+                font-size: 1.5em !important;
+                /* width: 31px; */
+                padding: 3px;
+                cursor:pointer;  
+                color: #364c64; 
+            }      
         }
         li:hover{
             color: rgb(61, 61, 61);

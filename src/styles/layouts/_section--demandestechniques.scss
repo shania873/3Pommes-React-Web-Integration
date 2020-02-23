@@ -1,0 +1,29 @@
+.section--demandestechniques{
+    .row--demandestechniques{
+        background-color: #f7f7f7;
+        display: flex;
+        align-items: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+        h3{
+            margin: 0;
+            font-size: 1em;
+        }
+        p{
+            margin: 0;
+            font-size: 1em;
+        }
+    }
+
+    .set-CallToAction--demandestechniques{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        text-align: center;
+        margin: auto;
+        align-items: center;   
+        margin-top: 40px;   
+    }
+}
