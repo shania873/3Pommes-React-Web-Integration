@@ -1,0 +1,74 @@
+
+footer{
+    background-color: $CouleurSectionGris;
+    padding-bottom: 50px;
+    padding-bottom: 50px;
+   svg{
+        color:$sectionBienvenueBackgroundColor;
+        cursor: pointer;
+
+        &:hover{
+            color: $blueTypoPrincipal;
+            @include transition(color 1s .5s, color 0.5s);       
+        }
+    }
+    h6{
+        font-size: 0.8em;
+        margin-bottom: 15px;
+    }
+    img{
+        max-width: 120px;
+    }
+    p{
+        font-size: 0.8em;
+    }
+    .badge-yellow{
+        width: 12px;
+        height: 12px;
+        display: inline-block;
+        background-color: $badgeColorYellow;
+        @include border-radius(51%);
+    }
+    .badge-purple{
+        width: 12px;
+        height: 12px;
+        display: inline-block;
+        background-color: $badgeColorPurple;
+        @include border-radius(51%);
+    }
+    .badge-red{
+        width: 12px;
+        height: 12px;
+        display: inline-block;
+        background-color: $badgeColorRed;
+        @include border-radius(51%);      
+    }
+    .badge-green{
+        width: 12px;
+        height: 12px;
+        display: inline-block;
+        background-color: $badgeColorGreen;
+        @include border-radius(51%);
+}
+    ul{
+        display: inline-block;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width:100%;
+        li{
+            span{
+                color: $blueTypoPrincipal;
+                font-size: 1.3em;
+                margin-right: 5px;
+            }
+            a{
+               color: $blueTypoPrincipal;
+            }
+            font-size: 0.8em;
+            @include flexbox();
+            @include align-items(center);
+            margin-bottom: 5px;
+        }
+    }
+}

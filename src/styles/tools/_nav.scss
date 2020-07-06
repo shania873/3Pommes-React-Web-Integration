@@ -1,0 +1,302 @@
+  
+  
+
+header{
+  position:relative;
+  .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #e7e7e7;
+    overflow: hidden;
+}
+
+.nav{
+  li{
+    a{
+      position: relative;
+      display: block;
+      padding: 10px 22px;
+    }
+  }
+}
+
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+}
+  .section--mainmenu{
+    .container--menu{  
+      background-color: $white;  
+      nav{
+        margin: 0;
+        .navbar-brand.navbar-image {       
+          height: 100%;
+  
+        }
+        .navbar-brand.navbar-image>img {
+          margin: auto 0;
+          z-index: 1;
+          height: auto;
+          width: 100%;
+        }
+  
+        .collapse{
+          ul{
+            li{
+             a{
+              font-family: noto_sansregular,Arial, Helvetica, sans-serif;
+              font-weight: bold;
+              font-size: 1em;             
+              color:$blueTypoPrincipal;
+             }
+           
+            }
+          }
+        }
+      }
+      
+  //
+      
+    }
+  }
+  
+}
+
+@media (min-width: 365px) {
+  .container--menu {
+    #navbar2 {
+        .nav {
+            li {
+                a {
+                    display: inline-block;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+
+}
+}
+@media (min-width: 768px) {
+  .container--menu {
+    #navbar2 {
+        .nav {
+            li {
+                a {
+                    max-width: 125px;
+                }
+            }
+        }
+    }
+
+}        
+}
+
+.hide{
+  height: 0px!important;
+  @include transition(all, .2s, ease-in-out);     
+}
+.hideMain{
+  opacity: 0.3;
+  @include transition(all, .2s, ease-in-out);     
+}
+.hideBody{
+  background-color: black;
+  @include transition(all, .2s, ease-in-out);     
+}
+.header--absolute{
+  position: absolute;
+  overflow: hidden;
+  height: 76%;
+  width: 100%;
+}
+
+#HomeMenuOpen{
+      width: 100%;
+      overflow: hidden;
+       position: absolute; 
+      opacity: 1;
+      z-index: 1;
+      margin: 0 auto;
+      @include transition(all, .2s, ease-in-out);     
+      height: auto;
+
+      .container--HomeMenuOpen{
+        background-color: #50ae31;
+        padding: 0;
+        height: 100%;
+        display: flex;
+        // max-width: 1134px;
+        flex-wrap: wrap;
+        margin: auto;
+        width: 100%;
+        
+        .container--carre{
+          background-size: cover;
+          color: white;
+          position: relative;
+          z-index: 11;      
+          height: 100%;
+          @include flexbox();
+          @include justify-content(stretch);         
+          padding: 0;
+          .bg--img{           
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+          }
+          h1{
+            padding-top: 134px;
+            padding-bottom: 134px;
+            text-align: center;
+            width: 100%;
+            color: white;
+            a{
+              color: $white;
+           
+            }
+          }
+        }
+     
+        .container--carre:nth-child(1) {
+         
+          &:after{
+            content: url(/src/img/Picture1--MenuOpen.png);
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 1;
+            background-size: cover;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            @include transition(all, .2s, ease-in-out);     
+          }
+          &.active:after{
+            opacity: 0.4!important;          
+            @include transition(all, .2s, ease-in-out);     
+          }
+       
+         
+        }
+        .container--carre:nth-child(2) {
+          &:after{
+            content: url(/src/img/Picture2--MenuOpen.png);
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 1;
+            background-size: cover;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            @include transition(all, .2s, ease-in-out);     
+          }
+          &.active:after{
+            opacity: 0.4!important;          
+            @include transition(all, .2s, ease-in-out);     
+          }
+        }
+        .container--carre:nth-child(3) {
+          &:after{
+            content: url(/src/img/Picture3--MenuOpen.png);
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 1;
+            background-size: cover;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            @include transition(all, .2s, ease-in-out);     
+          }
+          &.active:after{
+            opacity: 0.4!important;          
+            @include transition(all, .2s, ease-in-out);     
+          }
+        }
+        .container--carre:nth-child(4) {
+          &:after{
+            content: url(/src/img/Picture4--MenuOpen.png);
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 1;
+            background-size: cover;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            @include transition(all, .2s, ease-in-out);     
+          }
+           &.active:after{
+            opacity: 0.4!important;     
+            @include transition(all, .2s, ease-in-out);     
+          }
+        }
+        .container--carre:nth-child(5) {
+          &:after{
+            content: url(/src/img/Picture5--MenuOpen.png);
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 1;
+            background-size: cover;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            @include transition(all, .2s, ease-in-out);     
+          }
+          &.active:after{
+            opacity: 0.4!important;     
+            @include transition(all, .2s, ease-in-out);     
+}
+        }
+        .container--carre:nth-child(6) {
+          background-color: $sectionBienvenueBackgroundColor;
+          padding: 15px;
+          ul{
+            list-style: disc;
+            li{
+              a{
+                color: $white;
+
+              }
+              a:hover{
+                @include transition(all, .2s, ease-in-out);     
+                font-weight: bold;
+              }
+            }
+          }
+        }       
+      }
+}
+#navbarCollapse{
+  // height: 1px;
+}
+
+@media (min-width:425px){
+  .container--HomeMenuOpen{
+max-width: 378px;
+}
+}
+
+@media (min-width:768px){
+  .container--HomeMenuOpen{
+max-width: 671px;
+}
+}
+
+@media (min-width:1024px){
+  .container--HomeMenuOpen{
+  max-width: 945px;
+}
+}
+
+@media (min-width:1280px){
+  .container--HomeMenuOpen{
+    max-width: 1131px;
+  }
+}

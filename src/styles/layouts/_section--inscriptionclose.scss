@@ -1,0 +1,74 @@
+.section--inscriptionclose{
+    padding-bottom: 100px;
+    .row--inscriptionclose{
+        background-color: $CouleurSectionGris;
+        @include flexbox();
+        @include align-items(center);
+        padding :12px 20px 12px 20px;      
+        h3{
+            margin: 0;
+            font-size: 1em;
+            text-align: center;
+        }
+        p{
+            text-align: center;
+            margin: 0;
+            font-size: 1em;
+        }
+        .img--inscriptionclose{
+            @include flexbox();           
+            @include flex-direction(row-reverse);
+
+        }
+    }
+
+    .set-CallToAction--inscriptionclose{
+        @include flexbox();
+        @include flex-direction(column);
+        align-content: center;
+        text-align: center;
+        margin: auto;
+        @include align-items(center);   
+        margin-top: 20px;   
+    }
+}
+@media (min-width: 320px) {
+    .row--inscriptionclose{
+        @include flex-direction(column);
+        .img--inscriptionclose{
+           img{
+               margin:auto;
+           }
+            
+        }
+    }
+}
+@media (min-width: 375px){
+ 
+     
+}
+@media (min-width: 425px) {
+    
+}
+
+
+@media (min-width: 768px) {
+    .row--inscriptionclose{
+        @include flex-direction(row);
+        .img--inscriptionclose{
+            img{
+                margin-right:0;
+                max-width: 52%;
+                width: 100%;
+            }
+             
+         }
+    }
+}
+
+@media (min-width: 1024px) {
+   
+}
+@media (min-width: 1280px) {
+   
+}

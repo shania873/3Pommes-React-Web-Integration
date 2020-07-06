@@ -1,0 +1,71 @@
+.section--PratiqueInfos{
+    padding-bottom: 88px;
+    color:$blueTypoPrincipal;
+    .col--coordonneeduc{
+        h4{
+            font-size: 1.1em;
+        }
+        .row--coordonneeduc{
+            @include flexbox();
+            @include align-items(center);
+            
+            padding-bottom: 18px;
+            h5{
+                padding: 0;
+                margin: 0;
+                font-size: 1em;
+                font-style: italic;
+            }
+            span{
+                display: block;
+                font-size: 0.9em;
+            }
+        }
+    }
+    .col--infospratiques{
+        h4{
+            font-size: 1.1em;
+        }
+        ul{
+            list-style: disc;
+            li{
+                font-size: 0.9em;
+                padding-bottom: 5px;
+                margin-left: 18px;
+            }
+        }
+    }
+    .col--badges{
+        h4{
+            font-size: 1.1em;
+        }
+        img{
+            margin-right: 10px;
+        }
+    }
+  
+   
+}
+
+@media (min-width: 320px) {
+    
+}
+@media (min-width: 375px){
+ 
+     
+}
+@media (min-width: 425px) {
+    
+}
+
+
+@media (min-width: 768px) {
+  
+}
+
+@media (min-width: 1024px) {
+   
+}
+@media (min-width: 1280px) {
+   
+}

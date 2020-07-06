@@ -1,0 +1,46 @@
+.section--soutiensscolaire{
+    padding-bottom: 100px;
+.content--soutiensscolaire{
+    @include flexbox();
+    @include flex-direction(column);
+    @include justify-content(space-between);
+   
+    padding-top: 38px;
+    padding-bottom: 20px;
+    .set-CallToAction--soutiensscolaire{
+        @include flexbox();
+        @include flex-direction(column);      
+        text-align: center;
+        @include align-items(center);
+        margin: 0;
+      
+    }
+    p{
+        z-index: 1;
+        text-align: center;
+        span{
+            display: block;
+            font-weight: bold;
+        }
+    }
+}
+ 
+}
+@media (min-width: 320px) {}
+@media (min-width: 375px){
+ 
+     
+}
+@media (min-width: 425px) {
+    
+}
+
+
+@media (min-width: 768px) {}
+
+@media (min-width: 1024px) {
+   
+}
+@media (min-width: 1280px) {
+   
+}

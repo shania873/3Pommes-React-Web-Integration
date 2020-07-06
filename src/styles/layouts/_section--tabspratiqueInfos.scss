@@ -1,0 +1,79 @@
+.section--TabsPratiqueInfos{
+    
+    color:$blueTypoPrincipal;
+    padding: 0 15px 50px 15px;
+    .col--coordonneeduc{
+        h4{
+            font-size: 1.1em;
+        }
+        .row--coordonneeduc{
+            @include flexbox();
+            align-items: center;
+            padding-bottom: 18px;
+            h5{
+                padding: 0;
+                margin: 0;
+                font-size: 1em;
+                font-style: italic;
+            }
+            span{
+                display: block;
+                font-size: 0.9em;
+                text-align: left;
+            }
+        }
+    }
+    .col--infospratiques{
+        h4{
+            font-size: 1.1em;
+        }
+        ul{
+            list-style: disc;
+            @include flexbox();
+            @include flex-direction(column);
+            padding: 0;
+            li{
+                font-size: 0.9em;
+                padding-bottom: 5px;
+                margin-left: 18px;
+            }
+        }
+    }
+    .col--badges{
+        h4{
+            font-size: 1.1em;
+        }
+        img{
+            margin-right: 10px;
+        }
+    }
+  
+   
+}
+
+@media (min-width: 320px) {
+    
+}
+@media (min-width: 375px){
+ 
+     
+}
+@media (min-width: 425px) {
+    .set-title--listparticipants {
+        ul {
+            max-width: 26%;
+        }
+    }
+}
+
+
+@media (min-width: 768px) {
+  
+}
+
+@media (min-width: 1024px) {
+   
+}
+@media (min-width: 1280px) {
+   
+}

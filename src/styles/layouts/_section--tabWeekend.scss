@@ -1,0 +1,113 @@
+.section--tabWeekend{
+    padding-bottom: 100px;
+    h3,span{
+        text-align: center;
+        margin: 0;
+        display: block;
+    }
+  
+     
+    a {
+        svg {
+            color: #35495e;
+        }
+    }
+    a:hover svg{
+        color: #5c7086;
+        @include transition(color 1s .5s, color 0.5s);       
+    }
+
+    .nav-tabs{
+        li {
+            float: left;
+            position: relative;
+            top: 1px;
+            width: 100%;
+            cursor: pointer;
+            
+            a{
+                color: $blueTypoPrincipal;
+            }
+            
+    }
+        li:hover{
+            // background-color: $orangeTab;
+            color: $blueTypoPrincipal;
+            a{
+                border-color: #eeeeee #eeeeee #ddd;
+                @include transition(background-color 0.5s, color 0.5s);    
+                z-index:1;        
+                background-color: $orangeTab; 
+            }
+        }
+        li.active{
+
+            a{
+                color: $blueTypoPrincipal;
+                background-color: $orangeTab;
+                border: 0px solid #ddd;
+                border-bottom-color: transparent;
+               
+                z-index:-1;
+            }
+            a:hover{
+                color: $blueTypoPrincipal;
+                background-color: $orangeTab;
+                border: 0px solid #ddd;
+                border-bottom-color: transparent;
+              
+                @include transition(color 1s .5s, color 0.5s);       
+            }
+            a:focus{
+                color: $blueTypoPrincipal;
+                background-color: $orangeTab;
+                border: 0px solid #ddd;
+                border-bottom-color: transparent;
+            
+            }
+        }
+    }
+
+
+
+    .tab-content{
+        border: 2px solid $borderOrange;
+        border-radius: 7px;
+        display: inline-block;
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 320px) {
+    .section--tabWeekend .nav-tabs {
+        li {    
+            max-width: 100%;
+        }
+    }
+}
+@media (min-width: 375px){
+ 
+     
+}
+@media (min-width: 425px) {
+    
+}
+
+
+@media (min-width: 768px) {
+    .section--tabWeekend {
+        .nav-tabs {
+            li {    
+                max-width: 25%;
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+   
+}
+@media (min-width: 1280px) {
+   
+}

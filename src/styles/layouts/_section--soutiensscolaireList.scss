@@ -1,0 +1,74 @@
+.section--soutiensscolaireList{ 
+    padding-bottom:150px;
+  
+    svg{
+        color: $backgroundBtn;
+    }
+    h3{
+        margin: 0;
+        font-size: 1.7em;
+        font-weight: 100;
+        margin-bottom: 27px;
+    }
+    .row--demandestechniques{
+        margin-top:15px;
+        background-color: $CouleurSectionGris;  
+        color:$blueTypoPrincipal;    
+        h3{
+            margin: 0;          
+            font-weight: bold;
+        }
+        p{
+            margin: 0;         
+        }
+    }
+
+    .set-CallToAction{
+        @include flexbox();
+        @include flex-direction(column);     
+        text-align: center;
+        margin: auto;
+        @include align-items(center);   
+        margin-top: 40px;   
+    }
+}
+
+@media (min-width: 320px) {
+    .row--demandestechniques{
+        padding: 30px 0px 30px 0px;
+        h3{
+            font-size: 0.9em;
+        }
+        p{           
+            font-size: 0.9em;
+        }
+    }
+    .eye--container{
+        position: absolute;
+    }
+}
+@media (min-width: 375px){}
+@media (min-width: 425px) {}
+@media (min-width: 768px) {
+    .eye--container{
+        position: relative;
+    }
+    .row--demandestechniques{
+        padding: 30px 20px 30px 20px;
+        @include flexbox();
+        @include align-items(center);  
+        h3{
+            font-size: 1em;
+        }
+        p{           
+            font-size: 1em;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+   
+}
+@media (min-width: 1280px) {
+   
+}

@@ -1,0 +1,112 @@
+.section--Sectioncitation{
+    // padding-top: 150px;
+    padding-bottom: 150px;
+
+    .row--Sectioncitation{     
+        background-color: $CouleurSectionGris;
+        .content--Sectioncitation{
+            @include flexbox();
+            @include align-items(center);       
+            @include flex-direction(column);
+            @include align-content(column);
+            text-align: center;      
+            // padding: 0 30px 0 30px;
+
+            p{
+                font-size: 1.2em;
+                font-style: italic;
+                line-height: 35px;
+                width:100%;
+            }
+            p::after{
+                content: '"';
+                font-size: 1.2em;
+                font-style: italic;
+                line-height: 35px;
+            }
+            p::before{
+                content: '"';
+                font-size: 1.2em;
+                font-style: italic;
+                line-height: 35px;
+            }
+            .nom--Sectioncitation{
+                font-weight: bold;
+            }
+         
+        }
+    }
+    
+}
+
+@media (min-width: 320px) {
+    .section--Sectioncitation{
+        .row--Sectioncitation{
+            .container--Sectioncitation-right{
+                img{
+                    width: 100%;
+                }         
+            }
+            .container--Sectioncitation-left{
+                .content--Sectioncitation{
+                    padding: 20px 0px 20px 0px;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 375px){
+  
+     
+}
+@media (min-width: 425px) {
+    
+}
+
+
+@media (min-width: 768px) {
+    .section--Sectioncitation{
+        .row--Sectioncitation{
+            @include flexbox();
+            @include align-items(center);
+            .container--Sectioncitation-left{
+                .content--Sectioncitation{
+                    padding: 0 30px 0 30px;
+                }
+            }
+            .container--Sectioncitation-right{
+                img{
+                    width: auto;
+                    /* margin-right: 119px; */
+                    position: relative;
+                    right: 222px;
+                }         
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .section--Sectioncitation{
+        .row--Sectioncitation{
+            @include flexbox();
+            @include align-items(center);
+            .container--Sectioncitation-left{
+                .content--Sectioncitation{
+                    padding: 0 30px 0 30px;
+                }
+            }
+            .container--Sectioncitation-right{
+                img{
+                    width: auto;
+                    /* margin-right: 119px; */
+                    position: relative;
+                    right: auto;
+                }         
+            }
+        }
+    }
+}
+@media (min-width: 1280px) {
+   
+}

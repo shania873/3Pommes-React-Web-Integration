@@ -1,0 +1,50 @@
+.section--inscriptionopen{
+    padding-bottom: 100px;
+    .row--inscriptionopen{
+        background-color: $CouleurSectionGris;
+        @include flexbox();
+        @include align-items(center);
+        padding: 30px 20px 30px 20px;   
+        h3{
+            margin: 0;
+            font-size: 1em;
+            text-align: center;
+        }
+        p{
+            text-align: center;
+            margin: 0;
+            font-size: 1em;
+        }
+    }
+
+    .set-CallToAction--inscriptionopen{
+        @include flexbox();
+        @include flex-direction(column);  
+        text-align: center;
+        margin: auto;
+        @include align-items(center);   
+        margin-top: 20px;   
+    }
+}
+@media (min-width: 320px) {
+    
+}
+@media (min-width: 375px){
+ 
+     
+}
+@media (min-width: 425px) {
+    
+}
+
+
+@media (min-width: 768px) {
+  
+}
+
+@media (min-width: 1024px) {
+   
+}
+@media (min-width: 1280px) {
+   
+}

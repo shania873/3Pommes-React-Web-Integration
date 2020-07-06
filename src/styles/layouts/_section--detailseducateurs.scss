@@ -1,0 +1,405 @@
+
+*{
+    // border:1px solid red;
+}
+.section--detailseducateurs{
+    background-color: $sectionBienvenueBackgroundColor;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+    .dropdown-menu{
+        width: 100%;
+        text-align: center;
+        font-size: 1em;
+        font-weight: 700;
+        color: #50ae31!important;
+        padding: 5px 15px 5px 15px;
+        a{
+            display: block;
+            text-align: left;
+            font-size: 1em;
+            color: $backgroundBtn;
+        }
+    }
+    .prev:hover{
+        color: rgba(255, 255, 255, 0.466);
+        @include transition(color 0.5s, color 0.5s);       
+    }
+    .next:hover{
+        color: rgba(255, 255, 255, 0.466);
+        @include transition(color 0.5s, color 0.5s);       
+    }
+    .go--button:hover{
+        background-color: #f1eded!important;
+        @include transition(background-color 0.5s, color 0.5s);        
+    }
+    .mainMenu--detailseducateurs{
+        svg{
+            font-size: 1.6em;
+            color: white;
+        }
+        h3{
+            color: $white;            
+            margin: 0;
+            font-size: 1.6em;
+            font-weight: 300;
+          
+        }
+
+        ul{           
+            display: inline-block;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            position: relative;
+            @include flexbox();
+            @include justify-content(space-between);        
+            @include align-items(baseline);      
+            .item--icons{
+                width:100%;
+               
+                a{
+                    cursor: pointer;
+                    &.active{
+                        svg{
+                            color: white;
+                        }
+                    }
+                    svg{
+                        color: rgba(255, 255, 255, 0.466);
+                    }
+                    &:hover{
+                      
+                        svg{
+                            color: white;
+                            @include transition(color 1s .5s, color 0.5s);
+                          
+}
+                    }
+                  
+                }
+                a{
+                    position: relative;
+                    .pins{
+                        display: inline-block;
+                        position: absolute;
+                        top: -15px;
+                        background-color: $colorPins;                  
+                        border-radius: 50%;
+                        padding: 1px 8px 1px 8px;
+                        z-index: 5;
+                        color: white;
+                        right: -10px;
+                        font-weight: bold;
+                        font-size: 0.8em;
+                    }
+                }
+            } 
+            li{
+                @include flexbox();
+            }
+           
+        }
+    }
+    .detailseducateurs--left{
+        .dropdown{
+            z-index: 111111111;
+            .btn{
+                background-color: $backgroundDropdown;           
+                box-shadow: none;
+                border: none;
+                color: $backgroundBtn;
+                @include flexbox();
+                font-weight: bold;
+                margin-bottom: 15px;
+                padding: 8px 5px 8px 5px;          
+                @include align-items(center); 
+
+                span{
+                    padding: 15px;
+                    border-left: 1px solid #3e475e;
+                }
+            }
+            
+        }
+        color:$white;
+        img{
+            padding:0 91px 0 0;           
+        }
+        h4{
+            margin: 0;
+            font-size: 2.4em;
+            font-weight: 100;
+            display:inline-block;
+
+        }
+        .icon--pencil{
+            font-size: 1.5em;
+            margin-left: 8px;
+        }
+        p{
+            font-style: italic;
+            font-size: 1.1em;
+            span{
+                display:block;
+            }
+        }
+        a{
+            svg{
+                color: white;
+            }
+        }
+        a:hover{
+            svg{
+                color:rgba(255, 255, 255, 0.466);
+                @include transition(color 1s .5s, color 0.5s);       
+            }
+        }
+    }
+    .detailseducateurs--right{
+        overflow:hidden;
+        ul{
+            font-size:1.4em;
+            padding:0;
+            margin-left:auto;
+            width:100%;
+            @include flexbox();
+            @include justify-content(space-between);
+            li{
+                color:white;              
+                font-size:1.3em;
+                a{
+                    svg{
+                        color: white;
+                    }
+                }
+                a:hover{
+                    svg{
+                        color:rgba(255, 255, 255, 0.466);
+                        @include transition(color 1s .5s, color 0.5s);       
+                    }
+                    
+                }
+            }
+        }
+        .row--detailseducateurs{
+            color: $backgroundDropdown;           
+            text-align: left;
+            padding : 8px 0 8px 3px;            
+            border-bottom: 5px white dotted;
+            align-items: center;
+            @include flexbox();
+            .row--JaugeButton{
+                @include flexbox();
+                @include align-items(center);           
+                span{
+                    width: 100%;
+                    margin-left:auto;
+                }
+                .go--button{
+                    color: $backgroundBtn;
+                    padding: 8px 10px 8px 10px;                  
+                    border-radius: 5px;
+                    text-align: right;
+                    margin-left: 5px;
+                    background-color: white;
+
+                    @include flexbox();
+                    @include align-items(flex-end);
+                    @include align-content(end);
+                    @include justify-content(center);
+
+                    text-align: center;  
+                    font-weight: bold;
+              
+                }
+            }
+            .setButtons{
+                @include flexbox();
+                @include align-items(center);
+                span{
+                    width: 20%;
+                    margin-left:auto;
+                }
+                .go--button{
+                    color: $backgroundBtn;
+                    padding: 8px 10px 8px 10px;                  
+                    border-radius: 5px;
+                    text-align: right;
+                    margin-left: auto;
+                    background-color: $white;
+                    @include flexbox();
+                    text-align: center;    
+                    @include align-items(flex-end);   
+                    @include align-content(end);   
+                    @include justify-content(center);   
+                    font-weight: bold;
+                }
+                
+            }
+          
+        }
+    }
+}
+
+@media (min-width: 375px){
+ 
+     
+}
+
+
+
+@media (min-width: 320px) {
+    .detailseducateurs--right{
+            overflow:hidden;
+            ul{
+                max-width:40px;
+            }
+        }
+    .row--JaugeButton{
+        span{
+            max-width:100%;
+            margin-right:12px;
+            img{
+                max-width: 100px;
+            }
+        }
+            .go--button{
+                font-size:0.9em;
+            }
+        }
+      
+
+    .mainMenu--detailseducateurs{
+        ul{
+            @include flex-direction(column);           
+            @include align-items(baseline);
+            .detailseducateurs--titre{
+                margin: 0;
+                padding: 5px;
+                max-width: 100%;
+                @include justify-content(space-between);
+                @include align-items(flex-end);
+                padding: 0;
+              #titre--Rappels{
+                  a{
+                      margin-left: 5px;
+                     svg{
+                        font-size: 0.8em;
+
+                      }
+                      &:hover{
+                         
+                           
+                          svg{
+                            color: rgba(255, 255, 255, 0.466);
+                            @include transition(color 1s .5s, color 0.5s);  
+                          }  
+                      }
+                  }
+              }
+             
+            }
+            .item--icons{  
+                @include justify-content(space-between);
+                padding: 0;
+                @include align-items(flex-end);
+                margin-top: 24px;
+                max-width: 214px;
+            }
+        }
+    }
+}
+@media (min-width: 425px) {    
+    .section--detailseducateurs{
+    .dropdown{
+        max-width: 90%;
+    }   
+}  
+}
+
+@media (min-width: 768px) {
+    .section--detailseducateurs{
+    .dropdown{
+        max-width: 100%;
+    }
+    .mainMenu--detailseducateurs{
+        ul{
+           
+            .item--icons{
+                margin: 0;
+                padding: 5px;
+                margin-top: 19px;
+            }
+        }
+    }   
+    .row--JaugeButton{     
+        span{
+            max-width: 67px;
+            margin-right: 7px;
+        }
+     
+    .go--button{
+        font-size:1em;
+     }
+    .mainMenu--detailseducateurs{
+        ul{
+            @include flex-direction(row);        
+            @include align-items(baseline);
+            li{
+                margin: 0;
+                padding: 5px;
+                max-width: 39%;
+                @include justify-content(space-between);
+                padding: 0;
+                @include align-items(center);
+            }
+        }
+    }
+}
+}
+}
+@media (min-width: 1024px) {
+    .mainMenu--detailseducateurs{
+        ul{           
+            .item--icons{                
+                margin-top: 0px;
+            }
+        }
+    }  
+    .row--JaugeButton{
+     
+        span{
+        max-width:20%;
+        }
+    
+        }
+    .mainMenu--detailseducateurs{
+        ul{
+            @include flex-direction(row);
+            @include align-items(flex-end);        
+            .detailseducateurs--titre{
+                margin: 0;
+                padding: 5px;
+                max-width: 48%;
+                @include justify-content(space-between);
+                @include align-items(flex-end);
+           
+            
+            }
+            .item--icons{
+                @include justify-content(space-between);
+                @include align-items(flex-end);
+                margin: 0;
+                padding: 5px;
+            }
+        }
+    }
+}
+@media (min-width: 1280px) {
+   
+    .detailseducateurs--right{
+                overflow:hidden;               
+        }
+}

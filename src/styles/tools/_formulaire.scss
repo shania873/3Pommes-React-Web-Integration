@@ -1,0 +1,307 @@
+.section--pageformulaire {
+    color: $blueTypoPrincipal;
+    
+
+    .title--pagegenerique{
+        margin-top: 74px;
+        margin-bottom: 50px;
+        span{
+          
+            font-weight: bold;
+            color: #4db848;
+            font-size: 0.8em;
+        }
+        p,h2{
+            margin:0;
+            padding:0;
+        }
+    }
+    .container {
+        padding-bottom: 50px;
+    }
+
+
+    .container--cacheacocher {
+        .checkbox--container {
+
+         
+            .container {
+                display: block;
+                position: relative;
+                padding-left: 35px;
+                margin-bottom: 12px;
+                cursor: pointer;
+                font-size: 0.9em;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                padding-bottom: 2px;
+            }
+
+         
+            .container input {
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+                height: 0;
+                width: 0;
+            }
+
+         
+            .checkmark {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 20px;
+                width: 20px;
+                background-color: #eee;
+                border: 1px solid #c5c5c5;
+            }
+
+           
+            .container:hover input~.checkmark {
+                background-color: #ccc;
+
+
+            }
+
+            
+            .container input:checked~.checkmark {
+                background-color: #53ba4e;
+            }
+
+            
+            .checkmark:after {
+                content: "";
+                position: absolute;
+                display: none;
+            }
+
+            
+            .container input:checked~.checkmark:after {
+                display: block;
+            }
+
+        
+            .container .checkmark:after {
+                left: 0;
+                top: 0;
+                width: 5px;
+                height: 10px;
+                border: solid white;
+                border-width: 0 3px 3px 0;
+                -webkit-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
+                right: 0;
+                bottom: 0;
+                margin: auto;
+            }
+        }
+
+        .radio--container {
+
+            
+            .container {
+                display: block;
+                position: relative;
+                padding-left: 35px;
+                margin-bottom: 12px;
+                cursor: pointer;
+                font-size: 0.9em;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                padding-bottom: 2px;
+            }
+
+          
+            .container input {
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+            }
+
+           
+            .checkmark {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 25px;
+                width: 25px;
+                background-color: #eee;
+                border-radius: 50%;
+                border: 1px solid #c5c5c5;
+            }
+
+            
+            .container:hover input~.checkmark {
+                background-color: #ccc;
+            }
+
+            
+            .container input:checked~.checkmark {
+                background-color: #53ba4e;
+            }
+
+            
+            .checkmark:after {
+                content: "";
+                position: absolute;
+                display: none;
+            }
+
+          
+            .container input:checked~.checkmark:after {
+                display: block;
+            }
+
+           
+            .container .checkmark:after {
+                top: 0;
+                left: 0;
+                width: 7px;
+                height: 7px;
+                border-radius: 50%;
+                background: white;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+            }
+        }
+
+    }
+
+    .container--buttons {
+        .btn--principal {
+            background-color: #50ae31;
+            padding: 12px;
+            box-shadow: none;
+            border: none;
+            color: white;
+            margin-bottom: 15px;
+        }
+        .btn--principal:hover{
+            background-color: #3f9721;
+            @include transition(background-color 0.5s);     
+        }
+
+        .btn--secondaire {
+            background-color: #929292;
+            padding: 12px;
+            box-shadow: none;
+            border: none;
+            color: white;
+            margin-bottom: 15px;
+        }
+        .btn--secondaire:hover{
+            background-color: #696161;
+            @include transition(background-color 0.5s);         
+        }
+
+    }
+
+   
+        .required--info-textaria{
+            display: inline-block;
+            font-size: 0.8em;
+            color: $blueTypoPrincipal;
+            font-style: italic;
+        }
+    
+}
+
+///voici les points importants du formulaire pour que cela afflue sur tout le site, j'ai changée le "form-control" en "form-control3Pommes" car il y'avais beaucoup trop de règles css qui l'écrasais
+.form-control3Pommes {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #555555;   
+    background-image: none;
+    border: 1px solid #ccc;
+  }
+
+
+.asterix{
+    color: #4db848;
+}
+
+
+form {
+    h3 {
+        font-size: 1em;
+    }
+
+    h4 {
+        font-weight: 100;
+        font-size: 0.9em;
+    }
+}
+
+label {
+    margin-top: 10px;
+    display: inline-block;
+    font-weight: 100;
+    font-size: 0.9em;
+    margin-bottom: 7px;
+}
+
+label.inline {
+    display: inline;
+    margin-right: 50px;
+}
+
+input,
+textarea,
+select,
+option {
+    background-color: #f4f4f4;
+    border: 0;
+    @include border-radius(0);
+}
+
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 0;
+    border: 2px solid #53ba4e;
+  
+}
+
+select {
+    padding: 3px;
+    border: 1px solid #c5c5c5;
+    @include border-radius(0);
+    width: 100%;
+   
+}
+
+input,
+textarea {
+    padding: 3px;
+    border: 1px solid #c5c5c5;
+  
+    @include border-radius(0);
+}
+
+select {
+    margin-top: 10px;
+}
+
+input[type=submit],
+input[type=reset] {
+    width: 100px;
+    margin-left: 5px;
+    box-shadow: 1px 1px 1px #D83F3D;
+    cursor: pointer;
+}
+
+button {
+    margin-right: 10px;
+}

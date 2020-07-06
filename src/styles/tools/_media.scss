@@ -1,0 +1,43 @@
+@media (min-width: 320px){}
+
+@media (min-width: 365px) {
+    .collapse{
+        ul{
+          li{
+           a{            
+            max-width: 100%;
+            text-align: left;
+           }
+          }
+        }
+      }
+  
+  
+   
+
+}
+@media (min-width: 425px){}
+@media (min-width: 725px) {
+
+    .navbar.taller .navbar-nav>li>a {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        // text-align: center;
+        
+    }
+    .collapse{
+        ul{
+          li{
+            a{
+                    max-width: 174px;
+                    text-align: center;
+            }
+          }
+        }
+      }
+
+   
+
+}
+@media (min-width:1024px){}
+@media (min-width:1280px){}

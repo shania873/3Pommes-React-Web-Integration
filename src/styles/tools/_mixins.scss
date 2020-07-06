@@ -1,0 +1,74 @@
+//Cross browser CSS3 mixins
+@mixin box-shadow( $shadow1, $shadow2:false, $shadow3:false, $shadow4:false, $shadow5:false, $shadow6:false, $shadow7:false, $shadow8:false, $shadow9:false ) {
+    $params: $shadow1;
+    @if $shadow2 { $params: $shadow1, $shadow2; }
+    @if $shadow3 != false { $params: $shadow1, $shadow2, $shadow3; }
+    @if $shadow4 != false { $params: $shadow1, $shadow2, $shadow3, $shadow4; }
+    @if $shadow5 != false { $params: $shadow1, $shadow2, $shadow3, $shadow4, $shadow5; }
+    @if $shadow6 != false { $params: $shadow1, $shadow2, $shadow3, $shadow4, $shadow5, $shadow6; }
+    @if $shadow7 != false { $params: $shadow1, $shadow2, $shadow3, $shadow4, $shadow5, $shadow6, $shadow7}
+    @if $shadow8 != false { $params: $shadow1, $shadow2, $shadow3, $shadow4, $shadow5, $shadow6, $shadow7, $shadow8 }
+    @if $shadow9 != false { $params: $shadow1, $shadow2, $shadow3, $shadow4, $shadow5, $shadow6, $shadow7, $shadow8, $shadow9 }
+    
+    -webkit-box-shadow: $params;
+       -moz-box-shadow: $params;
+            box-shadow: $params;
+    }
+	@mixin transition($transition...) {
+		-moz-transition:    $transition;
+		-o-transition:      $transition;
+		-webkit-transition: $transition;
+		transition:         $transition;
+	}
+	@mixin transition-property($property...) {
+		-moz-transition-property:    $property;
+		-o-transition-property:      $property;
+		-webkit-transition-property: $property;
+		transition-property:         $property;
+	}
+	@mixin transition-duration($duration...) {
+		-moz-transition-property:    $duration;
+		-o-transition-property:      $duration;
+		-webkit-transition-property: $duration;
+		transition-property:         $duration;
+	}
+	@mixin transition-timing-function($timing...) {
+		-moz-transition-timing-function:    $timing;
+		-o-transition-timing-function:      $timing;
+		-webkit-transition-timing-function: $timing;
+		transition-timing-function:         $timing;
+	}
+	@mixin transition-delay($delay...) {
+		-moz-transition-delay:    $delay;
+		-o-transition-delay:      $delay;
+		-webkit-transition-delay: $delay;
+		transition-delay:         $delay;
+	}
+
+@mixin border-radius($radius) {
+	border-radius: $radius;
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+}
+
+@mixin border-radii($topleft, $topright, $bottomright, $bottomleft) {
+	border-top-left-radius: $topleft;
+	border-top-right-radius: $topright;
+	border-bottom-right-radius: $bottomright;
+	border-bottom-left-radius: $bottomleft;
+	-webkit-border-top-left-radius: $topleft;
+	-webkit-border-top-right-radius: $topright;
+	-webkit-border-bottom-right-radius: $bottomright;
+	-webkit-border-bottom-left-radius: $bottomleft;
+	-moz-border-radius-topleft: $topleft;
+	-moz-border-radius-topright: $topright;
+	-moz-border-radius-bottomright: $bottomright;
+	-moz-border-radius-bottomleft: $bottomleft;
+}
+
+@mixin gradient($color1, $color2) {
+	background-color: $color1;
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#{$color1}, endColorstr=#{$color2});
+	background-image: -moz-linear-gradient(center top, $color1, $color2);
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($color1), to($color2));
+}

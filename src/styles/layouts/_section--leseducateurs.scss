@@ -1,0 +1,85 @@
+.section--leseducateurs{
+    color: $blueTypoPrincipal;
+    padding-bottom: 100px;
+    a{
+        svg{      
+                color: $blueTypoPrincipal;   
+        }
+    }
+
+    .set-title--leseducateurs{
+        a {
+            svg{
+                color: #35495e;
+            }
+        }
+      
+        a:hover {
+            svg{
+                color: #5c7086;
+                @include transition(color 1s .5s, color 0.5s);       
+            }
+        }
+        @include flexbox();
+        margin-bottom: 40px;
+        ul{
+            @include flexbox();
+            @include align-items(center);
+            margin-left: auto;
+            padding: 0;
+            width: 100%;
+            @include justify-content(space-between);
+           
+            li{
+                font-size: 1.9em;
+            }
+        }
+    }
+   
+h3{
+    margin-bottom: 50px;
+    font-size: 1.8em;
+    font-weight: 300;
+}
+    .row--leseducateurs{
+        @include flexbox();
+        @include align-items(center);  
+        padding-bottom: 25px;
+        h4{
+            margin: 0;
+            font-size: 1.1em;
+            font-style: italic;
+        }
+        p{
+            margin: 0;
+        }
+    }
+  
+}
+@media (min-width: 320px) {
+    .set-title--leseducateurs{   
+        ul{
+            max-width: 40px;
+        }
+    }
+}
+@media (min-width: 375px){
+ 
+     
+}
+@media (min-width: 425px) {
+    
+}
+
+
+@media (min-width: 768px) {
+  
+}
+
+
+@media (min-width: 1024px) {
+    
+}
+@media (min-width: 1280px) {
+    
+}

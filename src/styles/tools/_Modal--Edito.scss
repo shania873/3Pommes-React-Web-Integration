@@ -1,0 +1,51 @@
+#Edito{
+    img{
+        max-width: 100%!important;
+    }
+    button {
+        /* background-color: #50ae31; */
+        padding: 12px;
+        box-shadow: none;
+        border: none;
+        color: white;
+        margin-left: auto;
+        margin-bottom: 15px;
+        float: right;
+        background-color: transparent;
+        color: black;
+        position: absolute;
+        z-index: 111;
+        right: 0;
+    }
+    h3{
+        font-size: 1.9em;
+        font-weight: 100;
+        // margin-top: 88px;
+    }
+    .modal-content{
+        display: inline-block;
+        border-radius: 0;
+    }
+    .content--modal{
+        padding: 28px;
+        padding-top: 0;
+    }
+    .set--signature{
+        p,a{
+            margin: 0;
+        }
+       
+    }
+    
+}
+
+@media (min-width: 768px){
+    .modal-dialog {
+        width: 69%;
+        margin: 30px auto;
+    }
+}
+
+.SRLIdle{
+    width:50%!important;
+}

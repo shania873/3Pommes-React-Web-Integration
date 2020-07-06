@@ -1,0 +1,50 @@
+.section--pagegenerique{
+    color:rgb(52, 72, 97);
+    .title--pagegenerique{
+        margin-top: 74px;
+        margin-bottom: 50px;
+        span{
+            
+            font-weight: bold;
+           color: $blueTypoPrincipal;
+            font-size: 0.8em;
+        }
+       p{
+        font-size: 0.9em;
+       }
+        p,h2{
+            margin:0;
+            padding:0;
+            color: $blueTypoPrincipal;
+        }
+    }
+    .row--pagegenerique{
+        h3 {
+            font-size: 1.1em;
+        }
+        p{
+            line-height: 25px;
+            font-size:0.9em;
+        }
+        h3,p{
+            color:rgb(52, 72, 97);
+        }
+        .text-italicCitation{
+            font-size:1.9em;
+            font-style:italic;
+            text-align:center;
+        }
+        .text-italic{
+            font-size:1em;
+        }
+        button {         
+            padding: 12px;
+            box-shadow: none;
+            border: none;
+            color: white;
+            margin-bottom: 15px;
+            margin: auto;
+        }
+        padding-bottom: 80px;
+    }
+}

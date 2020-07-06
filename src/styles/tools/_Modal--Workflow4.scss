@@ -1,0 +1,377 @@
+#Modal--Workflow4{
+    .modal-content {
+        display: inline-block;
+        @include border-radius(0); 
+        width: 100%;
+        border: 0;
+    }
+   
+    .modal-header {
+      
+        padding: 0;
+        .row--modal:nth-child(1){
+          background-color: #50af31;
+              @include flexbox();
+              @include justify-content(space-between);
+              @include align-items(center);
+              @include flex-direction(row);
+          h5{
+              color: white;
+              font-size: 1.2em;
+          }
+        }  
+        .row--modal:nth-child(2){
+          background-color: #f7f7f7;
+          @include flexbox();    
+          @include align-items(center);
+          .set--ClubSportDate{
+            @include flexbox();    
+            @include align-items(center);
+              span{
+                  font-size: 0.8em;
+                  font-weight: bold;
+                  color: #f9c943;
+              }
+              h1{
+                  font-weight: normal;
+              }
+              img{
+                  width: 76px;
+                  margin-right: 8px;
+              }
+          }
+          .profil--identite{
+              .title--PhotoNom{
+                @include flexbox();  
+               
+                img{
+                    width: 100%;
+                }
+              }
+          }
+          .container--badgesHeaderModal{
+              img{
+                  width: 100%;
+                  max-width: 47px;
+             
+              }
+            
+          }
+        }
+    }
+    .modal-footer{
+        padding: 15px;
+        text-align: right;
+        border-top: 1px solid #e5e5e5;
+        @include flexbox();
+        @include align-items(center); 
+        button{
+            margin-left: auto;
+        }
+        ul{
+           
+            li{
+                margin-left: 5px;
+               svg{
+                
+                        font-weight: 900;
+                        font-size: 1.7em;
+                
+                }
+            }
+        }
+    }
+  
+ 
+  
+    .modal-body{
+        padding-right: 25px;
+        padding-left: 25px;
+        button {
+            background-color: #50ae31;
+            padding: 12px;
+            box-shadow: none;
+            border: none;
+            color: white;
+            margin-bottom: auto;
+            margin-top: auto;
+            width: 100%;
+        }
+        .row--title{
+            h1{
+                font-size: 1.8em;
+                text-align: center;
+                font-weight: 100;
+                margin-bottom: 30px;
+                margin-top: 30px;
+            }
+        }
+        h3{
+            font-size: 1em;
+            margin: 0;
+        }
+        h3,p{
+            margin: 0;
+        }
+        
+      
+           .row--badges{
+          
+            padding-top: 8px;
+            padding-bottom: 8px;
+            background-color: #f7f7f7;
+            margin-top: 22px;
+            margin-bottom: 20px;
+            width: 100%;
+            margin-left: 0px;
+
+            @include flexbox(); 
+            @include align-items(center);
+         
+    
+           }
+       
+    }
+
+}
+
+@media (min-width: 320px) {
+    #Modal--Workflow4 {
+    .modal-header{ 
+        .row--modal:nth-child(1){
+            padding: 15px 15px 15px 15px; 
+            img{
+                max-width: 97px;
+            }
+        }
+        .row--modal:nth-child(2) {  
+         
+            .set--ClubSportDate{   
+                   @include flexbox();    
+              @include align-items(center);
+                padding-top: 10px;
+                padding-bottom: 20px;            
+                .title--ClubSportDate{
+                    h1{
+                        font-size: 1.9em;
+                        margin: 0;
+                    }
+                    h3{
+                        margin: 0;
+                        font-size: 0.9em;
+                    }
+                }
+            
+            } 
+            .profil--identite{
+                padding-bottom: 10px;
+                padding-top: 12px;
+                .title--PhotoNom{
+                    @include align-items(left);
+                    @include flex-direction(column);
+                    @include justify-content(space-between);      
+                    img{
+                        max-width: 89px;
+                    }
+                    h1{
+                        font-size: 1em;
+                        span{
+                            display: block;
+                        }
+                    }
+                }
+            }    
+            .container--badgesHeaderModal{            
+                h3{
+                    font-size: 1em;
+                    margin: 0;
+                    padding-bottom: 7px;
+                }
+            }
+        }
+    }
+    
+    .modal-body {
+        .row--containeridentite {   
+            .row--badges{
+                    @include flexbox();
+                    align-items: center;
+                    @include flex-direction(column);
+                    p{
+                        font-size: 0.8em;     
+                    }
+                    .col-item--badges {
+            
+                        max-width: 44px;
+                        margin-right: 5px;
+                    }
+            }
+    }
+}
+}
+
+
+
+}
+@media (min-width: 375px){
+
+ 
+}
+@media (min-width: 425px) {
+    #Modal--Workflow4{
+        .modal-header{        
+            .row--modal:nth-child(2) {     
+                .profil--identite{
+                    .title--PhotoNom{
+                        h1{
+                            font-size: 0.9em;
+                        }
+                    }
+                }
+        }
+    }
+    }
+}
+
+
+@media (min-width: 768px) {
+    #Modal--Workflow4{
+    .modal-header{
+        .row--modal:nth-child(2) {
+           padding-left: 0px;
+           padding-right: 0px;
+           .set--ClubSportDate{
+               .title--ClubSportDate {
+                   h1 {
+                       margin: 0;
+                       font-size: 1.5em;
+                   }
+                   h3{
+                       font-size: 0.8em;
+                       font-weight: normal;
+                   }
+               }
+           }
+           .profil--identite{
+               padding-left: 0;
+               .title--PhotoNom{
+                        @include align-items(center);
+                        @include flex-direction(row-reverse);
+                        @include justify-content(space-between);                  
+                   h1{
+                       font-size: 0.9em;
+                   }                 
+               }
+           }
+   
+   }
+}
+ .modal-body{
+     .row--containeridentite{
+        .row--badges{
+            @include flexbox();
+            @include align-items(center);
+            @include flex-direction(row);
+           }
+     }
+ }
+}
+
+}
+
+@media (min-width: 1024px) {
+    #Modal--Workflow4{
+    .modal-header{            
+        .row--modal:nth-child(2) {   
+            .set--ClubSportDate{           
+                .title--ClubSportDate{
+                    h3{
+                        font-size: 0.8em;
+                    }
+                }
+            
+            } 
+            .profil--identite{                 
+                .title--PhotoNom{                      
+                    img{
+                        max-width: 89px;
+                    }
+                    h1{
+                        font-size: 1em;
+                        span{
+                            display: block;
+                        }
+                    }
+                }
+            }    
+            .container--badgesHeaderModal{            
+                h3{
+                    font-size: 1em;
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    .modal-body {                
+        .row--containeridentite {    
+            @include flex-direction(row);
+        }
+    }
+}
+}
+@media (min-width: 1280px) {
+
+
+    #Modal--Workflow4 {
+        .modal-header { 
+            .row--modal:nth-child(1) {
+                padding-left: 26px;
+                padding-right: 40px;
+            }
+            .row--modal:nth-child(2) {
+                padding:8px 14px 8px 2px;   
+                @include flexbox();            
+                @include align-items(center);             
+                .container--badgesHeaderModal{
+                    img{
+                        margin-right: 10px;
+                    }
+                }
+                .container--badgesHeaderModal{
+                    img{
+                        margin-right: 15px;
+                    }
+                }
+                    .set--ClubSportDate{
+                        .title--ClubSportDate {
+                            h1 {
+                                margin: 0;
+                                font-size: 2em;
+                            }
+                            h3{
+                                font-size: 1em;
+                                font-weight: normal;
+                                margin: 0;
+                            }
+                        }
+                    }
+                    .profil--identite{                       
+                        padding: 12px 29px 10px 29px;
+                        .title--PhotoNom{
+                            h1{
+                                font-size: 1.1em;
+                                span{
+                                    display: block;
+                                }
+                            }
+                            img{
+                                max-width: 95px;
+                            }
+                        }
+                    }
+                   
+                }
+            }
+        }
+}

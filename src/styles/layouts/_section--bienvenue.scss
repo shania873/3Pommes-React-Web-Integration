@@ -1,0 +1,521 @@
+.section--bienvenue{
+    background-color: $sectionBienvenueBackgroundColor;
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+    a{
+        cursor: pointer;
+    }
+    li{
+        @include flexbox();
+        #btn--messages{
+            display: inline-block;
+            padding : 0 4px 0 16px;       
+            font-size: 1.6em;      
+            cursor:pointer;
+            svg{
+                color: rgba(255, 255, 255, 0.616);
+                @include transition(color 1s .5s, color 0.5s);   
+            }
+         
+            &.active{
+                svg{
+                    color: white;
+                    @include transition(color 1s .5s, color 0.5s);   
+                }
+              
+            }
+            &:hover{
+                svg{
+                    color: white;
+                    @include transition(color 1s .5s, color 0.5s);   
+                }
+            }
+        }
+      
+        #btn--rappels{
+            display: inline-block;
+            padding : 0 4px 0 16px;       
+            font-size: 1.6em;      
+            cursor:pointer;
+            color: rgba(255, 255, 255, 0.616);
+            svg{
+                color: rgba(255, 255, 255, 0.616);
+            }
+            &.active{
+                svg{
+                    color: white;
+                }
+              
+            }
+            &:hover{
+                svg{
+                    color: white;
+                    @include transition(color 1s .5s, color 0.5s);   
+                }
+            }
+        }
+      
+    }
+    
+
+    a{
+        position: relative;
+        svg{
+            color: #8deb6e;
+        }
+        .pins{
+            display: inline-block;
+            position: absolute;
+            top: -5px;
+            background-color: #ff8841;
+            border-radius: 50%;
+            padding: 1px 6px 1px 6px;
+            z-index: 5;
+            color: white;
+            right: -10px;
+            font-weight: bold;
+            font-size: 0.5em;
+        }
+    }
+   
+   
+    .bienvenue--left{
+        a{
+            svg {
+                color: #35495e;
+            }
+        }
+        a:hover{
+            svg{
+                color: #5c7086;
+                @include transition(color 0.5s, color 0.5s);       
+            }
+        }
+    }
+ 
+    .setButtons{
+        @include flexbox();
+        @include flex-direction(column);
+        @include align-items(center);
+    
+        .go--button:hover {   
+            background-color: #f3f1f1;
+          
+            @include transition(background-color 0.5s, color 0.5s);   
+        }
+        .cancel--button:hover{
+            font-weight: bold;
+            @include transition(background-color 0.5s,  font-weight 0.5s);   
+        }
+        .go--button{      
+            padding: 6px 45px 6px 45px;             
+            border-radius: 5px;
+            background-color: white;
+            color: $backgroundBtn;
+            font-weight: bold;       
+        
+        
+        }
+        
+        .cancel--button{
+            display: block;
+            text-align: center;
+            font-size: 1.1em;
+            color: $white;
+            margin: auto;          
+            margin-top: 8px;
+            text-decoration: underline;
+            padding-bottom: 5px;
+        }
+    }
+    
+    .row1--Badges{
+        @include flexbox();          
+        @include justify-content(space-around); 
+        margin-right:0;
+        padding-right:0;
+        padding-left: 38px;
+        margin-bottom: 7px;
+
+    }
+    .row2--Badges{
+        @include flexbox();
+        @include justify-content(space-around);     
+        margin-left:0;
+        padding-left:0;
+        padding-right: 33px;
+        
+    }
+    .container--bienvenue{  
+        .set--greenCase{
+            padding-bottom: 28px;
+            @include flexbox();
+            @include flex-direction(column);
+            @include align-items(center);
+            width:100%;
+        }  
+    .mainMenu--bienvenue{
+border-bottom: 2px solid $white;
+        #titre--messages,#titre--rappels{
+          
+          @include flexbox();
+          @include align-items(baseline);
+            color: $white;            
+            margin: 0;
+            font-size: 1.7em;
+            font-weight: 300;
+            h3{
+                margin:0 18px 0 0;              
+                font-size: 0.9em;
+                font-weight: normal;
+            }
+            a{
+                svg{
+        
+                    color:  $white;  
+                    font-size: 0.7em;
+                    margin-right: 11px;
+                }
+            }
+            a:hover {
+                svg{
+                    color: #8deb6e;
+                    @include transition(color 1s .5s, color 0.5s);       
+                }
+            }
+        }       
+
+        ul{           
+         
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            position: relative;
+            @include flexbox();
+            @include justify-content(space-between);        
+            @include align-items(center);             
+           
+            li{
+                display: inline-block;
+
+            }
+           
+        }
+    }
+        .bienvenue--left{
+            background-color: $white;
+          svg{
+            color:#32475a;
+          }
+            
+            h1{
+                display: block;             
+                color: $blueTypoPrincipal;
+                font-weight: 400;
+                span{                 
+                    color: $blueTypoPrincipal;
+                }
+            }
+            h4{
+                color: $blueTypoPrincipal;
+                font-family: noto_sansregular,Arial, Helvetica, sans-serif;               
+                font-style: italic;
+                font-weight: 400;
+            }
+            .bienvenue--picWelcome{           
+                background-color: $white;              
+                .bienvenue--iconCrayon{
+                    position: absolute;
+                    top: 8px;
+                    right: 12px;
+                    
+               
+                }
+                h1{
+                    span{
+                        display: block;                    
+                      
+                    }
+                }
+            }
+            .bienvenue--BadgeKarma{
+                background-color: $greenSectionBadgeKarma;
+               
+                .col-sm-6{
+             
+                    padding-top: 10px;
+                    padding-bottom: 37px;
+                    box-sizing: border-box;
+                }
+                .plugin-jauge{
+                    width: 100%;
+                    margin: auto;
+                    max-width: 228px;
+                    display: inline-block;                  
+                    height:100%;
+                }
+                .badges-img{
+                    .badge-item{                     
+                        display: inline-block;
+                        margin-right: 5px;
+                        margin-bottom: 0px;
+                    }
+                    img{
+                        width: 100%;
+                    }
+                }
+                h4{
+                    margin-bottom: 14px;
+                    font-size: 1.2em;
+                    color: $blueTypoPrincipal;
+                    font-style: normal;
+                    font-weight: bold;
+                    width:100%;
+                }                
+             
+                .bienvenue--iconOeil{
+                        @include flexbox();
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                        margin-right: 8px;
+                        margin-bottom: 4px;
+                        a{
+                            @include flexbox();
+                            svg{
+                                margin-left: auto;
+                                width: auto;
+                                @include align-items(flex-end);  
+                                @include align-content(flex-end);
+                                font-size: 1.3em;
+                            }
+                        }
+                   
+                }
+            }
+        }
+        .bienvenue--right{
+            
+            color: $white;
+            // overflow: hidden;
+            // scroll-x: initial;
+            height: 100%;          
+            // overflow: scroll;
+            // overflow-x: hidden;
+            svg{
+                color: $white;
+            }
+            #rappels--partBienvenue{
+                color:$white;
+                overflow: hidden;
+                scroll-x:initial;
+                height: 100%;
+                overflow: scroll;
+                overflow-x: hidden;
+                .row--rappels{
+                    border-bottom:4px $white dotted; 
+                    @include flexbox();
+                    @include align-items(center);         
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                  }
+            }
+            #messages--partBienvenue{
+                color:$white;
+                overflow: hidden;
+                scroll-x:initial;
+                height: 100%;
+                overflow: scroll;
+                overflow-x: hidden;
+                .row--messages{
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    border-bottom: 4px $white dotted;
+                    p{
+                        .name--messages{
+                            font-size: 1.2em;
+                            overflow: hidden;
+                            margin-top: 0;
+                            margin: 0;
+                        }
+                        span{
+                            display: block;
+                            font-size: 1.1em;
+                            font-style: italic;
+                        }
+                       
+                        font-size: 0.9em;              
+                        overflow: hidden;
+                        margin: 0 0 8px 0;                              
+                    }
+                }
+            }
+          
+           
+         
+        }
+    }
+    
+}
+@media (min-width: 320px) {
+    .section--bienvenue{
+        padding-top: 0;
+    .bienvenue--picWelcome{
+        display:block;
+      
+            h1{
+                margin-top: 16px;
+                font-size: 1em;
+                margin-bottom: 9px;                     
+                span{
+                    font-size: 1.5em;
+                 
+                }
+            }
+            h4{
+                margin: 0;
+                font-size: 0.8em;
+            }
+        
+    }
+    .mainMenu--bienvenue{
+        padding-top: 49px;
+    padding-bottom: 6px;
+    }
+}
+}
+@media (min-width: 375px){
+    .section--bienvenue {
+        .container--bienvenue {
+            .bienvenue--left {
+                margin-bottom: 50px;
+                .bienvenue--picWelcome{
+                    @include flexbox();
+                    h1{
+                        margin-top: 30px;                       
+                        font-size: 1.2em;                           
+                        span{
+                            font-size: 1.5em;
+                         
+                        }
+                    }
+                    h4{
+                        margin: 0;
+                        font-size: 0.8em;
+                    }
+                } 
+                .bienvenue--BadgeKarma {
+                  
+                        margin-bottom: 51px;
+                        h4 {
+                            margin-bottom: 20px;
+                            padding-top: 0px;
+                            padding-bottom: 0px;
+                            margin-top: 15px;
+                        }
+                }
+            }
+        }
+    } 
+}
+@media (min-width: 425px) {
+    
+}
+
+
+@media (min-width: 768px) { 
+    .section--bienvenue {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        .container--bienvenue{ 
+            .mainMenu--bienvenue{
+                padding-top:0px;
+            padding-bottom: 6px;
+            }
+                .bienvenue--left{
+                    margin-bottom: 0px;   
+                    .bienvenue--picWelcome{
+                        @include flexbox();
+                        h1{
+                            margin-top: 22px;
+                            font-size: 1.4em;
+                            margin-bottom: 7px;                  
+                            span{
+                                font-size: 1.4em;
+                             
+                            }
+                        }
+                        h4{
+                            font-size: 1.1em;
+                        }
+                    }                     
+                      
+                      
+                    .bienvenue--BadgeKarma{
+                  
+                        margin-bottom: 0px;
+                        h4 {
+                            margin-bottom: 20px;                         
+                            padding-top: 0px;
+                            padding-bottom:0px;
+                            margin-top: 15px;
+    
+                            }
+                        }
+                 }
+                 .bienvenue--right{
+                    // max-height: 563px;
+                }
+            }
+        }
+    
+  
+}
+
+
+
+@media (min-width: 1024px) {
+    .section--bienvenue {
+        .container--bienvenue{
+            .bienvenue--right{
+                // max-height: 590px;
+            }
+            .bienvenue--left{
+                .bienvenue--picWelcome{
+                    @include flexbox();
+                    h1{
+                        margin-top: 51px;
+                        font-size: 1.4em;
+                        margin-bottom: 26px;                
+                        span{
+                            font-size: 1.4em;
+                         
+                        }
+                    }
+                    h4{
+                        font-size: 1.1em;
+                    }
+                }    
+            }
+        }
+    }
+}
+@media (min-width: 1280px) {
+    .section--bienvenue {
+        .container--bienvenue{
+            .bienvenue--right{
+                // max-height: 386px;
+            }
+        }
+    }
+}
+@media (min-width: 1440px) {
+    .section--bienvenue {
+        .container--bienvenue{
+            .bienvenue--right{
+                // max-height: 386px;
+            }
+        }
+    }
+}

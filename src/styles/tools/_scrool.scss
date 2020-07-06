@@ -1,0 +1,29 @@
+
+  ::-webkit-scrollbar-track
+{
+	// background-color: #57b539;
+	// border-radius: 10px;
+	// background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+	width: 12px;
+	height: 20px;
+}
+::-webkit-scrollbar-thumb
+{
+	// @include border-radius(10px);
+	background-color: $backgroundBadgeKarma;
+	
+}
+.section--infosrandonne{
+	::-webkit-scrollbar-thumb
+	{
+		@include border-radius(0px);
+		background-color: rgb(191, 191, 191);
+		
+	}
+}
+
+

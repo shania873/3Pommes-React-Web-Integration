@@ -1,0 +1,456 @@
+#Modal--Workflow2{ 
+    .modal-content {
+        display: inline-block;
+        @include border-radius(0);      
+        width: 100%;
+        border: 0;
+
+        .modal-header{
+            padding: 0;
+            .row--modal:nth-child(1){
+              background-color: $navtabactivecolor;
+              @include flexbox();
+              @include justify-content(space-between);
+              @include align-items(center);
+              @include flex-direction(row);
+              h5{
+                  color: white;
+                  font-size: 1.2em;
+              }
+            }  
+            .row--modal:nth-child(2){
+              background-color: #f7f7f7;
+              @include flexbox();    
+              @include align-items(center);
+              .set--ClubSportDate{
+                @include flexbox();    
+                @include align-items(center);
+                  span{
+                      font-size: 0.8em;
+                      font-weight: bold;
+                      color: #f9c943;
+                  }
+                  h1{
+                      font-weight: normal;
+                  }
+                  img{
+                      width: 76px;
+                      margin-right: 8px;
+                  }
+              }
+              .profil--identite{
+                  .title--PhotoNom{
+                    display: flex;
+                   
+                    img{
+                        width: 100%;
+                    }
+                  }
+              }
+              .container--badgesHeaderModal{
+                  img{
+                      width: 100%;
+                      max-width: 47px;
+                 
+                  }
+                
+              }
+            }
+         }
+            .modal-footer{
+                padding: 15px;
+                text-align: right;
+                border-top: 1px solid #e5e5e5;
+                @include flexbox();
+                align-items: center;
+                button{
+                    margin-left: auto;
+                }
+                ul{
+                   
+                    li{
+                        margin-left: 5px;
+                       svg{
+                        
+                                font-weight: 900;
+                                font-size: 1.7em;
+                        
+                        }
+                    }
+                }
+            }
+          
+            .modal-body{
+                padding-right: 25px;
+                padding-left: 25px;
+                .checkbox--container {
+                    .container {
+                        display: block;
+                        position: relative;
+                        padding-left: 35px;
+                        margin-bottom: 12px;
+                        cursor: pointer;
+                        font-size: 0.9em;
+                        -webkit-user-select: none;
+                        -moz-user-select: none;
+                        -ms-user-select: none;
+                        user-select: none;
+                        text-align: left;
+                        padding-bottom: 2px;
+                    }
+            
+                   
+                    .container input {
+                        position: absolute;
+                        opacity: 0;
+                        cursor: pointer;
+                        height: 0;
+                        width: 0;
+                    }
+            
+                 
+                    .checkmark {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        height: 20px;
+                        width: 20px;
+                        background-color: #eee;
+                        border: 1px solid #c5c5c5;
+                    }
+            
+                   
+                    .container:hover input~.checkmark {
+                        background-color: #ccc;
+                        @include transition(color 1s .5s, color 0.5s);       
+                    }
+            
+                    
+                    .container input:checked~.checkmark {
+                        background-color: #53ba4e;
+                    }
+            
+                    
+                    .checkmark:after {
+                        content: "";
+                        position: absolute;
+                        display: none;
+                    }
+            
+                    
+                    .container input:checked~.checkmark:after {
+                        display: block;
+                    }
+            
+                
+                    .container .checkmark:after {
+                        left: 0;
+                        top: 0;
+                        width: 5px;
+                        height: 10px;
+                        border: solid white;
+                        border-width: 0 3px 3px 0;
+                        -webkit-transform: rotate(45deg);
+                        -ms-transform: rotate(45deg);
+                        transform: rotate(45deg);
+                        right: 0;
+                        bottom: 0;
+                        margin: auto;
+                    }
+                }
+                .row--title{
+                    padding-top: 40px;
+                    padding-bottom: 40px;                  
+                    width: 100%;                   
+                    text-align: center;
+                    margin: 0;                  
+                    h1{
+                        font-weight: normal;
+                        margin-bottom: 30px;
+                    }
+                    p{
+                        text-align: left;
+                    }
+                    ul{
+                       
+                        li{
+                            list-style: disc;
+                            text-align: left;
+                        }
+                    }
+                 
+    
+                }
+                .warning--container{
+                    padding: 30px;
+                    background-color: #d7265d;
+                    color: white;
+                    margin-top: 50px;
+                    margin-bottom: 50px;
+                    span{
+                        display: block;
+                        font-weight: bold;
+                    }
+                }
+                    .container--conditiondaccees{
+                        margin-top: 33px;
+                        ul{
+                            @include flexbox();
+                            @include flex-direction(column);
+                            padding: 19px;
+                            padding-top: 0;
+                            padding-bottom: 0;                          
+                        }
+                    }
+               
+            }
+    }
+    
+    
+}
+
+@media (min-width: 320px) {
+    #Modal--Workflow2 {
+        .modal-header{ 
+            .row--modal:nth-child(1){
+                padding: 15px 15px 15px 15px; 
+                img{
+                    max-width: 97px;
+                }
+            }
+            .row--modal:nth-child(2) {  
+                @include flex-direction(column);
+                
+                .set--ClubSportDate{   
+                    @include flexbox();
+                    @include align-items(center);              
+                    padding-top: 10px;
+                    padding-bottom: 20px;            
+                    .title--ClubSportDate{
+                        h1{
+                            font-size: 1.9em;
+                            margin: 0;
+                        }
+                        h3{
+                            margin: 0;
+                            font-size: 0.9em;
+                        }
+                    }
+                
+                } 
+                .profil--identite{
+                    padding-bottom: 10px;
+                     padding-top: 12px;
+                    .title--PhotoNom{
+                        @include align-items(left); 
+                        @include flex-direction(column);   
+                        @include justify-content(space-between);                        
+                        img{
+                            max-width: 89px;
+                        }
+                        h1{
+                            font-size: 1em;
+                            span{
+                                display: block;
+                            }
+                        }
+                    }
+                }    
+                .container--badgesHeaderModal{            
+                    h3{
+                        font-size: 1em;
+                        margin: 0;
+                        padding-bottom: 7px;
+                    }
+                }
+            }
+        }
+        .modal-body{
+            .row--title{
+                h1{
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+                }
+            }
+            .row--containeridentite {
+       
+                @include flex-direction(column);
+
+                .container--identite {    
+                    padding-left: 24px;
+                      padding-top: 22px; 
+    
+                      .row--badges{
+                        @include flex-direction(row);
+                        flex-wrap: wrap;
+                        .col-item--badges {
+                            max-width: 44px;
+                            margin-right: 5px;
+                        }
+                    }
+                    
+                   }
+            }
+           
+              
+        }
+       
+
+    }
+  
+   
+}
+
+@media (min-width: 425px) {
+    .modal-header{        
+            .row--modal:nth-child(2) {     
+                .profil--identite{
+                    .title--PhotoNom{
+                        h1{
+                            font-size: 0.9em;
+                        }
+                    }
+                }
+        }
+    }
+  
+}
+
+
+@media (min-width: 768px) {
+#Modal--Workflow2{
+    .modal-header{
+             .row--modal:nth-child(2) {
+                @include flex-direction(row);
+                padding-left: 0px;
+                padding-right: 0px;
+               
+                .set--ClubSportDate{
+                    .title--ClubSportDate {
+                        h1 {
+                            margin: 0;
+                            font-size: 1.5em;
+                        }
+                        h3{
+                            font-size: 0.8em;
+                            font-weight: normal;
+                        }
+                    }
+                }
+                .profil--identite{
+                    padding-left: 0;
+                    .title--PhotoNom{
+                        @include align-items(center); 
+                        @include flex-direction(row-reverse);   
+                        @include justify-content(space-between);   
+                        h1{
+                            font-size: 0.9em;
+                        }                 
+                    }
+                }
+        
+        }
+    }
+   
+   
+    .modal-body{
+        .container--identite {    
+              padding-left: 24px;
+              padding-top: 22px; 
+           }
+    } 
+}  
+    }
+  
+@media (min-width: 1024px) {
+    #Modal--Workflow2 {
+        .modal-header{            
+            .row--modal:nth-child(2) {   
+                .set--ClubSportDate{           
+                    .title--ClubSportDate{
+                        h3{
+                            font-size: 0.8em;
+                        }
+                    }
+                
+                } 
+                .profil--identite{                 
+                    .title--PhotoNom{                      
+                        img{
+                            max-width: 89px;
+                        }
+                        h1{
+                            font-size: 1em;
+                            span{
+                                display: block;
+                            }
+                        }
+                    }
+                }    
+                .container--badgesHeaderModal{            
+                    h3{
+                        font-size: 1em;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    
+    }
+  
+    
+}
+@media (min-width: 1280px) {
+    
+    #Modal--Workflow2 {
+        .modal-header { 
+            .row--modal:nth-child(1) {
+                padding-left: 26px;
+                padding-right: 40px;
+            }
+            .row--modal:nth-child(2) {
+                padding:8px 14px 8px 2px;    
+                @include flexbox();
+                @include align-items(center);   
+                .container--badgesHeaderModal{
+                    img{
+                        margin-right: 10px;
+                    }
+                }
+                .container--badgesHeaderModal{
+                    img{
+                        margin-right: 15px;
+                    }
+                }
+                    .set--ClubSportDate{
+                        .title--ClubSportDate {
+                            h1 {
+                                margin: 0;
+                                font-size: 2em;
+                            }
+                            h3{
+                                font-size: 1em;
+                                font-weight: normal;
+                                margin: 0;
+                            }
+                        }
+                    }
+                    .profil--identite{                       
+                        padding: 12px 29px 10px 29px;
+                        .title--PhotoNom{
+                            h1{
+                                font-size: 1.1em;
+                                span{
+                                    display: block;
+                                }
+                            }
+                            img{
+                                max-width: 95px;
+                            }
+                        }
+                    }
+                   
+                }
+            }
+        }
+}

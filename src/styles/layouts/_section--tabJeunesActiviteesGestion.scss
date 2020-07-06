@@ -1,0 +1,653 @@
+.section--tabJeunesActivitesGestion{
+    padding-bottom: 150px;
+    .pins{
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        background-color: #ff8841;
+        border-radius: 50%;
+        padding: 1px 7px 1px 7px;
+        z-index: 5;
+        color: white;
+        right: 0;
+        font-weight: bold;
+        font-size: 0.8em;
+        margin: 2px;
+        margin-top: 4px;
+    }
+    .dropdown-tabJeunes{
+        cursor: pointer;
+
+    }
+    .dropdown-tabJeunes:hover{
+        background-color: #50af31;
+        a{
+            svg{
+                color: white!important;
+                @include transition(color 1s .5s, color 0.5s);       
+            }
+        }
+    }
+    .row--menuTab{
+        width: 100%;
+        @include flexbox();
+        margin-left: auto;
+      
+        ul{
+            @include flexbox();
+            padding: 0;
+            margin: 0;
+            width:100%;
+            
+        }
+        .set--searchExpand{
+            width: 100%;
+           svg{
+                cursor: pointer;
+                font-size: 1.2em;
+                margin-right: 5px;
+            }
+        }
+        .set--prevNext{
+            width: 100%;
+            .prev{
+               svg{
+                    cursor: pointer;
+                    font-size: 1.6em;
+                  
+                }
+                svg:hover{
+                    color: #5c7086;
+                    @include transition(color 1s .5s, color 0.5s);       
+                }
+            }
+            .next{
+               svg{
+                    cursor: pointer;
+                    font-size: 1.6em;
+                 
+                }
+                svg:hover{
+                    color: #5c7086;
+                    @include transition(color 1s .5s, color 0.5s);       
+                }
+            }
+        }
+           
+    }
+    .set--searchExpand{
+        @include flexbox();
+        width: 50%;
+    }
+   
+    .link--website {       
+        color: #3d3d3d;
+        padding-bottom: 5px;
+        border-bottom: dotted 2px;
+        height: auto;
+        margin: auto;
+        font-size: 0.9em;
+    }
+    .row--lessons{       
+            background-color: #f7f7f7;     
+            margin: 15px 0 28px 0;
+            padding: 15px 0 10px 0;
+            width: 100%;
+            color:$blueTypoPrincipal;
+        h4{
+            font-size: 1.1em;
+        }
+        p{
+            font-size: 1.1em;
+        }
+        h3{
+            font-size: 1.3em;
+            font-weight: 400;
+        }
+        h4,p,h3{
+            margin: 0;
+        }
+    }
+    .nav-tabs{
+        display: inline-block;
+        width: 100%;
+        li.active{
+            a{
+                color: $white;
+                background-color: #50af31;
+                border: 0px solid #ddd;
+                border-bottom-color: transparent;
+                cursor: pointer;
+                border-radius: 0;
+                font-weight: 100;
+                position: relative;  
+            }
+            a:focus{
+                color: $white;
+                background-color: #50af31;
+                border: 0px solid #ddd;
+                border-bottom-color: transparent;
+                cursor: pointer;
+                border-radius: 0;
+                font-weight: 100;
+                position: relative;
+            }
+            a:hover{
+                color: $white;
+                background-color: #50af31;
+                border: 0px solid #ddd;
+                border-bottom-color: transparent;
+                cursor: pointer;
+                border-radius: 0;
+                font-weight: 100;
+                @include transition(background-color 1s .5s, color 0.5s);       
+                position: relative;
+            }
+        }
+      
+       
+        li{
+            a{
+                color: $blueTypoPrincipal;
+                background-color: $CouleurSectionGris;
+                border: 0px solid #ddd;
+                border-bottom-color: transparent;
+                cursor: pointer;
+                border-radius: 0;
+                font-weight: 100;
+                padding-left: 50px;
+                font-size: 1.5em;
+                padding-right: 50px;
+                height: 100%;
+                min-height: 55px;
+              
+            }
+            a:hover{
+                background-color: #e6e3e3;     
+                @include transition(background-color 0.5s, color 0.5s);        
+                color: $blueTypoPrincipal;
+}
+        }
+    }
+    
+    .tab-content{
+        position: relative;
+        border-top: 3px solid $backgroundBtn;
+        display: inline-block;
+        top: -5px;
+        width: 100%;
+    }
+    #jeunes{
+        padding-bottom: 50px;
+        padding-top:100px;
+        .set-tabJeunesActivitesGestion{
+            padding-bottom: 50px;
+            .dropdown.show.open{
+               svg{
+                    color: white;
+                }
+              
+                background-color: #50ae31;
+            }
+            .dropdown{         
+                position: absolute;           
+                @include flexbox();
+                height: 25px;                
+                padding: 9px;
+                top: 0;
+           
+                a{
+                    width: 100%;
+                    max-width: 26px;
+                    @include flexbox();
+                    @include align-items(flex-end);
+                    @include justify-content(space-between);
+                   
+                }
+         
+                
+                .dropdown-menu{
+                    background-color: $backgroundBtn;
+                    left: auto;         
+                    position: absolute;
+                    right: 0px;
+                    min-width: 240px;
+                    padding: 0 30px 17px 30px;                   
+                    border-radius: 0;
+                    margin: 0;                 
+                    border: 0px;
+                    ul{
+                        li{
+                            list-style: disc;
+                            color: white;
+                            padding-top: 5px;
+                            font-size: 1.1em;
+                            a{
+                                max-width: 100%;
+                                color: $white;
+                                font-weight: normal;
+                              
+                            }
+                            a:hover{
+                                font-weight: bold;
+                            
+                                @include transition(color 1s .5s, color 0.5s);       
+}
+                        }
+                    }
+                }
+              
+                
+            }
+            svg{
+                color: $backgroundBtn;
+                font-size: 0.4em;
+                margin-right: 4px;
+            }
+            h4{
+                margin: 0;
+                padding: 0;
+             
+            }
+            p{
+                padding-top: 5px;
+                padding-bottom: 5px;
+                margin: 0;
+                float: left;
+            }
+            .jauge--tab{
+                padding-right: 70%;
+                margin-top: 10px;
+            }
+            .col-item--badges{    
+                width: 100%;
+            }
+        }
+     
+    }
+    #gestion{
+        .tabgestion{
+            .table-responsive{
+                margin-top: 12px;
+            }
+            .table{
+                thead{
+                    tr{
+                        th{
+                            padding: 11px;
+                            line-height: 1.42857;
+                            vertical-align: top;
+                            border-top: 0px solid #ddd;
+                            color:$blueTypoPrincipal;
+                        }
+                        td{
+                            padding: 11px;
+                            line-height: 1.42857;
+                            vertical-align: top;
+                            border-top: 0px solid #ddd;
+                            color:$blueTypoPrincipal;
+                        }
+                    }
+                }
+                tbody{
+                    tr{
+                        th{
+                            padding: 11px;
+                            line-height: 1.42857;
+                            vertical-align: top;
+                            border-top: 0px solid #ddd;
+                            color:$blueTypoPrincipal;
+                        }
+                        td{
+                            padding: 11px;
+                            line-height: 1.42857;
+                            vertical-align: top;
+                            border-top: 0px solid #ddd;
+                            color:$blueTypoPrincipal;
+                        }
+                    }
+                }
+                tfoot{
+                    tr{
+                        th{
+                            padding: 11px;
+                            line-height: 1.42857;
+                            vertical-align: top;
+                            border-top: 0px solid #ddd;
+                            color:$blueTypoPrincipal;
+                        }
+                        td{
+                            padding: 11px;
+                            line-height: 1.42857;
+                            vertical-align: top;
+                            border-top: 0px solid #ddd;
+                            color:$blueTypoPrincipal;
+                        }
+                    }
+                }
+            }
+           
+
+            ul{
+                @include flexbox();
+                padding: 0;
+                margin: 0;
+            }
+        }
+    }
+   
+      
+
+    .container--partactivites{
+        padding-top: 100px;
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+       
+        .tab-content{
+           
+            position: relative;
+            border: 2px solid #00c142;
+            padding: 20px;
+            width: 100%;
+            .row--setkarmaoptionmenuTab{
+                padding: 0;
+                margin: 0;
+                @include flexbox();
+                .row--karmaoption{
+                    @include flexbox();
+                    min-width: 80%;
+                    .dropdown{
+                        .dropdown--TabsWebsite{
+                            padding: 0;
+                            margin-left: 5px;
+                            margin-right: 5px;
+                            font-weight: bold;
+                            background-color: transparent;
+                            color: black;
+                        }
+                    }
+                }
+              }
+        
+        }
+      
+    
+        .nav-tabs {
+            li.active{
+                a{
+                    color: $backgroundDropdown;//
+                    background-color: $navtabactivecolor;
+                    border: 0px solid #ddd;
+                    border-bottom-color: transparent;
+                    cursor: pointer;
+                    border-radius: 0;
+                    font-weight: bold;           
+                    text-align: center;
+                    display: inline-block;
+                    text-align: center;
+                    width: 100%;
+                }
+                a:hover{
+                    color: $backgroundDropdown;//
+                    background-color: $navtabactivecolor;
+                    border: 0px solid #ddd;
+                    border-bottom-color: transparent;
+                    cursor: pointer;
+                    border-radius: 0;
+                    font-weight: bold;           
+                    text-align: center;
+                    @include transition(color 1s .5s, color 0.5s);       
+                }
+                a:focus{
+                    color: $backgroundDropdown;//
+                    background-color: $navtabactivecolor;
+                    border: 0px solid #ddd;
+                    border-bottom-color: transparent;
+                    cursor: pointer;
+                    border-radius: 0;
+                    font-weight: bold;           
+                    text-align: center;
+                }
+            }
+            li{
+                a:hover{
+                    color: $blueTypoPrincipal;
+                    background-color:#f3efef;
+                    @include transition(color 1s .5s, color 0.5s);       
+                }
+                a{
+                    color: $blueTypoPrincipal;
+                    background-color: transparent;
+                    border: 0px solid;
+                    border-bottom-color: transparent;
+                    cursor: pointer;
+                    border-radius: 0;
+                    font-weight: bold;                 
+                    padding-left: 15px;
+                    padding-right: 15px;  
+                    text-align: center;                   
+                    display: inline-block;
+                    text-align: center;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .row--setButton{
+        @include flexbox();
+        @include flex-direction(column);
+       
+        text-align: center;
+        margin: auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        // button:hover{
+        //     background-color: #408c27!important;
+        // }
+    }
+  
+}
+@media (min-width: 320px) {
+  
+   
+        .container--partactivites {
+            .tab-content {
+                .row--setkarmaoptionmenuTab {
+                    @include flex-direction(column);
+                    
+                }
+            }
+        }
+        .row--menuTab{
+            max-width: 63px;
+            ul{
+                @include  justify-content(space-between);     
+             
+                max-width: 40px;
+            }
+        }
+   
+    .set--prevNext{
+        max-width: 35px;
+       
+    }
+    .set--searchExpand{
+        max-width: 26px;
+    }
+    .set-tabJeunesActivitesGestion{
+    .dropdown{
+         
+       
+        right: 0px;
+      
+   }
+}
+    .col-item--badges{
+    
+        max-width: 37px;
+        margin-right: 5px;
+    
+    }
+   
+
+    .row--setButton{
+      
+        width: 100%;
+       
+    }
+    .line-dropdown{
+        @include flex-direction(column);
+    }
+    .container--partactivites{
+        .nav-tabs{
+            li{
+                max-width: 100%;
+                width: 100%;
+                font-size: 0.6em;
+            }
+        }
+    }
+    .section--tabJeunesActivitesGestion{
+        .nav{
+            li{
+                width: 100%;
+                text-align: center;
+
+            }
+        }
+    }
+}
+@media (min-width: 375px){
+ 
+     
+}
+@media (min-width: 425px) {
+    
+}
+
+
+@media (min-width: 768px) {
+    
+   
+       
+  
+ 
+    .row--setButton{      
+        width: 100%;  
+        max-width: 280px;
+    }
+    .line-dropdown{
+        @include flex-direction(row);
+        padding: 0;
+    }
+    .nav-headerTabs{
+        li{
+            width: 100%;
+            text-align: center;
+            max-width: 100%;
+        }
+    }
+
+ 
+    .container--partactivites{
+        .tab-content {
+            .row--setkarmaoptionmenuTab {
+                @include flex-direction(row);
+                
+            }
+        }
+        .nav-tabs{
+            li{
+                max-width: 122px;
+                width: 100%;
+                font-size: 0.5em;
+                a{
+                    @include flexbox();
+                    @include align-items(center);
+                    line-height: 16px;
+                    font-size: 1.7em;
+                }
+            }
+        }
+    }
+    
+    
+}
+
+@media (min-width: 1024px) {
+    .section--tabJeunesActivitesGestion{
+        .nav-headerTabs{
+            width: 100%;
+            li{
+                width: 100%;
+                text-align: center;
+                max-width: 41%;
+            }
+        }
+        .container--partactivites{
+            .nav-tabs{
+                li{
+               
+                    position: relative;
+                    font-size: 0.6em;
+                    max-width: 143px;
+                    a{
+                        line-height: 18px;
+                    }
+                }
+            }
+        }
+    }
+  
+}
+@media (min-width: 1280px) {
+    .section--tabJeunesActivitesGestion{
+        .nav-headerTabs{
+            li{
+                width: 100%;
+                text-align: center;
+                max-width: 30%;
+            }
+        }
+    .container--partactivites{
+        .nav-tabs{
+            li{
+                max-width: 151px;
+                position: relative;
+                font-size: 0.7em;
+                a{
+                    line-height: 18px;
+                    font-size: 1.5em;
+                }
+            }
+        }
+    }
+}
+}
+
+@media (min-width: 1440px) {
+    .section--tabJeunesActivitesGestion{
+        .nav-headerTabs{
+            li{
+                width: 100%;
+                text-align: center;
+                max-width: 30%;
+            }
+        }
+    .container--partactivites{
+        .nav-tabs{
+            li{
+            
+                position: relative;
+                font-size: 0.7em;
+                a{
+                    line-height: 18px;
+                    font-size: 1.5em;
+                }
+            }
+        }
+    }
+}
+}

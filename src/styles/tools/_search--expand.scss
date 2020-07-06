@@ -1,0 +1,83 @@
+#searchbartop {
+    // position:absolute;
+    top:2px; right:2px;
+    position: relative;
+    svg{
+        color: #50ae31;
+    }
+    label{
+        position: absolute;
+        right: 0;
+    }
+  }
+  #searchbartop #searchbartopbtn { 
+    position:absolute; 
+    left: -9999px;
+  }
+  #searchbartop #searchbartopbtn + label { 
+    display:inline-block; 
+    cursor:pointer;
+    width:24px; height:24px;
+    line-height:24px;
+    text-align:center;
+    // background:#ccc;
+  }
+  #searchbartop #searchbartopbtn2 { 
+    position:absolute; 
+    left: -9999px;
+  }
+  #searchbartop #searchbartopbtn2 + label { 
+    display:inline-block; 
+    cursor:pointer;
+    width:24px; height:24px;
+    line-height:24px;
+    text-align:center;
+    // background:#ccc;
+  }
+  #searchbartop form {
+    position:absolute; 
+    top:0; right:24px;
+    display:none;
+  }
+  #searchbartop form > button, #searchbartop form > div {
+    display:table-cell;
+    // height:24px;
+  }
+  #searchbartop #searchbartopbtn:checked ~ form {
+    display:table;
+  }
+  #searchbartop #searchbartopbtn2:checked ~ form {
+    display:table;
+  }
+  #searchbartop form > div > input {
+    width:0;
+  }
+  
+  @keyframes expand {
+    from { width:0; }
+    to   { width:200px; }
+  }
+
+  @media (min-width:320px){
+    #searchbartopbtn:checked ~ form > div > input {
+      width: 126px;
+      transition: width 2s;
+}
+#searchbartopbtn2:checked ~ form > div > input {
+  width: 126px;
+  transition: width 2s;
+}
+  }
+
+  @media (min-width:768px){
+    #searchbartopbtn:checked ~ form > div > input {
+      width: 126px;
+      transition: width 2s;
+}
+   #searchbartopbtn2:checked ~ form > div > input {
+     width: 126px;
+     transition: width 2s;
+}
+    
+  }
+ 
